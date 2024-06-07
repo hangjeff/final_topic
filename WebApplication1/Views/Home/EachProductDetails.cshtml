@@ -1,0 +1,109 @@
+﻿@model IEnumerable<DapperProject.Models.ProductDetails>
+@{
+    ViewBag.Title = "EachProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid"> 
+       @*  <div class="navbar-header">
+            <a class="navbar-brand" href="#">MoBBi99</a>
+        </div> *@
+        <ul class="nav navbar-nav">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-left" action="@Url.Action("Search", "Home")" method="GET">
+            <div class="form-group">
+                <input type="text" class="form-control" name="query" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid" style="padding-left: 300px; padding-right:300px;">
+    <h3>Product Specification</h3>
+    @foreach (var product in Model)
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">@product.FruitsName</div>
+            <div class="panel-body">
+                <div class="col-sm-3 col-md-6" style="color:blue">
+                    <img src="/lib/Images/@product.Url" width="400" height="400" />
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity_@product.ProductID" name="quantity" value="1" min="1" max="10" />
+                </div>
+                <div class="col-sm-9 col-md-6">
+                    <h3><b>Products:</b></h3>
+                    <h6>@product.FruitsName</h6>
+                    <h3><b>Features:</b></h3>
+                    <h6>@product.Features</h6>
+                    <h3><b>Made:</b></h3>
+                    <h4>@product.made</h4>
+                    <h3><b>Delivery:</b></h3>
+                    <h6>@product.delivery</h6>
+                    <h3><b>Price:</b></h3>
+                    <h6>@product.Price</h6>
+                </div>
+            </div>
+            <div>
+                <a id="addToCartBtn_@product.ProductID" class="btn btn-info btn-lg" style="margin-left: 60px;">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart
+                </a>
+                <a href="@Url.Action("commodity", "Home")" class="btn btn-info btn-lg" style="margin-left:60px">
+                    <span class="glyphicon glyphicon-eye-open"></span> Continue shopping
+                </a>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[id^="addToCartBtn_"]').click(function (e) {
+            e.preventDefault();
+            var productId = $(this).attr('id').split('_')[1];
+            var quantity = $("#quantity_" + productId).val();
+            var productName = $(this).closest('.panel').find('.panel-heading').text();
+            var productUrl = $(this).closest('.panel').find('img').attr('src').replace('/lib/Images/', '');
+            var productFeatures = $(this).closest('.panel').find('h6').eq(1).text();
+            var productMade = $(this).closest('.panel').find('h4').text();
+            var productDelivery = $(this).closest('.panel').find('h6').eq(2).text();
+            var productPrice = $(this).closest('.panel').find('h6').eq(3).text();
+
+            var url = "@Url.Action("Add", "AddToCart")" +
+                "?id=" + productId +
+                "&quantity=" + quantity +
+                "&name=" + encodeURIComponent(productName) +
+                "&url=" + encodeURIComponent(productUrl) +
+                "&features=" + encodeURIComponent(productFeatures) +
+                "&made=" + encodeURIComponent(productMade) +
+                "&delivery=" + encodeURIComponent(productDelivery) +
+                "&price=" + encodeURIComponent(productPrice);
+
+            window.location.href = url;
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

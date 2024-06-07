@@ -1,0 +1,155 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication1
+build_property.RootNamespace = WebApplication1
+build_property.ProjectDir = \\MATRIX\Communist_2\Webby2\WebApplication1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = \\MATRIX\Communist_2\Webby2\WebApplication1
+build_property._RazorSourceGeneratorDebug = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/Backstage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYWNrc3RhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/commodity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb21tb2RpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/EachProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFYWNoUHJvZHVjdERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/member.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxtZW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/Members_Information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW1iZXJzX0luZm9ybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/Members_join.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW1iZXJzX2pvaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/Park_information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXJrX2luZm9ybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Home/SearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2hSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/Backstage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xCYWNrc3RhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/member.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xtZW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/Members_Information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xNZW1iZXJzX0luZm9ybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/Members_join.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xNZW1iZXJzX2pvaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xPcmRlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Homo/Park_information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tb1xQYXJrX2luZm9ybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Shared/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFib3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Shared/Myorder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE15b3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Shared/News1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld3MxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Shared/_HomepageLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib21lcGFnZUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//MATRIX/Communist_2/Webby2/WebApplication1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bddmc6yalx

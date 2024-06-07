@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileDAL", "MobileDAL\MobileDAL.csproj", "{97470B84-FBDC-4B3C-90C1-E25368216778}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97470B84-FBDC-4B3C-90C1-E25368216778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97470B84-FBDC-4B3C-90C1-E25368216778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97470B84-FBDC-4B3C-90C1-E25368216778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97470B84-FBDC-4B3C-90C1-E25368216778}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3911F081-4FA3-4434-8333-79085DBAF695}
+	EndGlobalSection
+EndGlobal

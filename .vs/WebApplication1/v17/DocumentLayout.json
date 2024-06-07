@@ -1,0 +1,718 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\MATRIX\\Communist_2\\Webby2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\matrix\\communist_2\\webby2\\webapplication1\\controllers\\addtocartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\agricultural_order_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\matrix\\communist_2\\webby2\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\matrix\\communist_2\\webby2\\webapplication1\\views\\shared\\myorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\migrations\\20240522045223_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\members_information.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\homedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\park_information.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\migrations\\20240522045223_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\controllers\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\member.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\dapperproject.models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\dappernews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\eachproductdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\shared\\_homepagelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\homo\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\mealorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\agricultural_products_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\meal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\allorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\models\\productdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\commodity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\news.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\matrix\\communist_2\\webby2\\webapplication1\\views\\shared\\myorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\wwwroot\\js\\vertical.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97470B84-FBDC-4B3C-90C1-E25368216778}|MobileDAL\\MobileDAL.csproj|\\\\MATRIX\\Communist_2\\Webby2\\mobiledal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97470B84-FBDC-4B3C-90C1-E25368216778}|MobileDAL\\MobileDAL.csproj|\\\\MATRIX\\Communist_2\\Webby2\\mobiledal\\mobiledetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97470B84-FBDC-4B3C-90C1-E25368216778}|MobileDAL\\MobileDAL.csproj|\\\\MATRIX\\Communist_2\\Webby2\\mobiledal\\mobiledal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\wwwroot\\css\\verticalmenu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3567CEDF-53C0-4AA7-B363-7A96FDFB876C}|WebApplication1\\WebApplication1.csproj|\\\\MATRIX\\Communist_2\\Webby2\\webapplication1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 26,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddToCartController.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Controllers\\AddToCartController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AddToCartController.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Controllers\\AddToCartController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AddToCartController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAApwBEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T05:50:04.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Members_Information.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Members_Information.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Members_Information.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Members_Information.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Members_Information.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T03:16:54.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Agricultural_Order_Details.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Agricultural_Order_Details.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Agricultural_Order_Details.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Agricultural_Order_Details.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Agricultural_Order_Details.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T04:06:01.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAFsBAAAAAAAAAAAwwO4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T10:21:53.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240522045223_InitialCreate.Designer.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Migrations\\20240522045223_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Migrations\\20240522045223_InitialCreate.Designer.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Migrations\\20240522045223_InitialCreate.Designer.cs",
+              "RelativeToolTip": "WebApplication1\\Migrations\\20240522045223_InitialCreate.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T04:03:04.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\About.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T02:54:45.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Myorder.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T06:03:18.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "member.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\member.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\member.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\member.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\member.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T02:51:17.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240522045223_InitialCreate.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Migrations\\20240522045223_InitialCreate.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Migrations\\20240522045223_InitialCreate.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Migrations\\20240522045223_InitialCreate.cs",
+              "RelativeToolTip": "WebApplication1\\Migrations\\20240522045223_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T04:06:13.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Park_information.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Park_information.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Park_information.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Park_information.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Park_information.cshtml",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T05:01:47.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\OrderConfirmation.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\OrderConfirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T05:04:02.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MealOrder.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\MealOrder.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\MealOrder.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\MealOrder.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\MealOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:38:52.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Contact.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Contact.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Contact.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:38:41.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Agricultural_Products_Category.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Agricultural_Products_Category.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Agricultural_Products_Category.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Agricultural_Products_Category.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Agricultural_Products_Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:38:37.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T02:22:41.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Homo\\About.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Homo\\About.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Homo\\About.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Homo\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T02:09:02.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Employee.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Employee.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Employee.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAzwBUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:07:31.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Customer.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Customer.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Customer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:06:53.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AllOrder.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\AllOrder.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\AllOrder.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\AllOrder.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\AllOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:06:17.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Meal.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Meal.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Meal.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\Meal.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Meal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:04:24.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeDbContext.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\HomeDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\HomeDbContext.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\HomeDbContext.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\HomeDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:03:29.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DapperProject.Models.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\DapperProject.Models.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\DapperProject.Models.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\DapperProject.Models.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\DapperProject.Models.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA/wAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T08:10:56.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Session.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Controllers\\Session.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\Session.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Controllers\\Session.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\Session.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T05:47:31.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductDetails.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\ProductDetails.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\ProductDetails.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\ProductDetails.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\ProductDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T05:37:51.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\ErrorViewModel.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T05:38:29.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DapperNews.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\DapperNews.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\DapperNews.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Models\\DapperNews.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\DapperNews.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T05:37:21.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SearchResults.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\SearchResults.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\SearchResults.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\SearchResults.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\SearchResults.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAD0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T02:24:08.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "commodity.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\commodity.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\commodity.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\commodity.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\commodity.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T02:22:27.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "News.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\News.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\News.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\News.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\News.cshtml",
+              "ViewState": "AQIAALMAAAAAAAAAAAD4v5IAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T01:29:47.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EachProductDetails.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\EachProductDetails.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\EachProductDetails.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\EachProductDetails.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\EachProductDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T08:34:21.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Myorder.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\Myorder.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAHEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T07:45:43.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T08:05:44.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T09:52:27.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_HomepageLayout.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\_HomepageLayout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_HomepageLayout.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\_HomepageLayout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_HomepageLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T08:58:16.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T02:37:00.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T05:32:14.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T05:49:01.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MobiledetailDAL.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\MobileDAL\\MobiledetailDAL.cs",
+              "RelativeDocumentMoniker": "MobileDAL\\MobiledetailDAL.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\MobileDAL\\MobiledetailDAL.cs",
+              "RelativeToolTip": "MobileDAL\\MobiledetailDAL.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T10:06:25.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.Development.json",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\appsettings.Development.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-11T09:38:15.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T10:04:16.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "web.config",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\web.config",
+              "RelativeDocumentMoniker": "WebApplication1\\web.config",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\web.config",
+              "RelativeToolTip": "WebApplication1\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-11T10:37:16.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\MobileDAL\\Program.cs",
+              "RelativeDocumentMoniker": "MobileDAL\\Program.cs",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\MobileDAL\\Program.cs",
+              "RelativeToolTip": "MobileDAL\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T10:03:44.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "MobileDAL.csproj",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\MobileDAL\\MobileDAL.csproj",
+              "RelativeDocumentMoniker": "MobileDAL\\MobileDAL.csproj",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\MobileDAL\\MobileDAL.csproj",
+              "RelativeToolTip": "MobileDAL\\MobileDAL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-11T10:27:27.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "VerticalMenu.css",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\wwwroot\\css\\VerticalMenu.css",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\VerticalMenu.css",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\wwwroot\\css\\VerticalMenu.css",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\VerticalMenu.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-12T08:15:03.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "vertical.js",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\wwwroot\\js\\vertical.js",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\js\\vertical.js",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\wwwroot\\js\\vertical.js",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\js\\vertical.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-12T08:16:58.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "WebApplication1.csproj",
+              "DocumentMoniker": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\WebApplication1.csproj",
+              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.csproj",
+              "ToolTip": "\\\\MATRIX\\Communist_2\\Webby2\\WebApplication1\\WebApplication1.csproj",
+              "RelativeToolTip": "WebApplication1\\WebApplication1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-11T10:34:40.062Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
