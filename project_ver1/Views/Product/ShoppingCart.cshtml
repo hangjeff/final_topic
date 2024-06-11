@@ -55,6 +55,7 @@
                 <th scope="col">商品數量</th>
                 <th scope="col">商品單價</th>
                 <th scope="col">總價</th>
+                <th scope="col">修改數量</th>
                 <th scope="col">刪除</th>
             </tr>
         </thead>
@@ -77,6 +78,11 @@
                         @{
                             i++;
                         }
+                        <td>
+                            <a href="@Url.Action("EachProductDetails", "Product", new { id = product.ID })" style=" text-decoration: none; color:#42602D;">
+                                <button class="btn btn-success">修改數量</button>
+                            </a>
+                        </td>
                         <td>
                             <form method="post" action="@Url.Action("ShoppingCart")">
                                 <input type="hidden" name="productId" value="@product.ID" />

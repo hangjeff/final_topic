@@ -72,7 +72,7 @@ namespace project_ver1.Controllers
 
         private void Get_AgriculturalOrder()
         {
-            //新增
+
 
         }
         [HttpPost]
@@ -170,7 +170,7 @@ namespace project_ver1.Controllers
 
         public class OrderData : Agricultural_Order
         {
-            // multiple order details in an order
+
             public List<DetailData> Details { get; set; }
             public OrderData()
             {
@@ -239,7 +239,14 @@ namespace project_ver1.Controllers
                         };
 
                         _context.AgriculturalOrderDetail.Add(agriculturalOrderDetail);
+
+                        var product = _context.AgriculturalProduct.Find(detail.ProductID);
+                        if (product != null)
+                        {
+                            product.Stock -= detail.Count;
+                        }
                     }
+
 
                     _context.SaveChanges();
 
@@ -255,7 +262,6 @@ namespace project_ver1.Controllers
                 return Redirect("/Home/member");
             }
         }
-
 
 
         //        Agricultural_Order ao = new Agricultural_Order();
