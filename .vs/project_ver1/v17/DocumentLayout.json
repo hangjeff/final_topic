@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\home\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\views\\home\\member.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\views\\home\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\forgotpasswordconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\home\\member.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\member.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,11 +102,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 338,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ForgotPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Home\\ForgotPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\ForgotPasswordConfirmation.cshtml",
@@ -119,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Home\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\ForgotPassword.cshtml",
@@ -131,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "member.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Home\\member.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\member.cshtml",
@@ -139,12 +139,11 @@
               "RelativeToolTip": "project_ver1\\Views\\Home\\member.cshtml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAiwDcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-06T03:30:54.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T03:30:54.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BackstageContact.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Home\\BackstageContact.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageContact.cshtml",
@@ -156,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Backstage.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Home\\Backstage.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\Backstage.cshtml",
@@ -168,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Home\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\ResetPassword.cshtml",
@@ -180,31 +179,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "SearchRooms.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Room\\SearchRooms.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAAApwBMAAAAcAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAApwEIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-08T06:08:33.289Z"
+              "WhenOpened": "2024-06-08T06:08:33.289Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\Index.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\Index.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\Index.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Room\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAApwA0AAAAvAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADYAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-08T06:06:18.487Z"
+              "WhenOpened": "2024-06-08T06:06:18.487Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\appsettings.json",
               "RelativeDocumentMoniker": "project_ver1\\appsettings.json",
@@ -222,7 +223,7 @@
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\RoomController.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Controllers\\RoomController.cs",
               "RelativeToolTip": "project_ver1\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAgwFQAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAIwCEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T06:04:03.455Z",
               "EditorCaption": ""

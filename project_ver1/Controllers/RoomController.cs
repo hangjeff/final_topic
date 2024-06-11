@@ -30,7 +30,7 @@ namespace project_ver1.Controllers
         }
 
         [HttpPost]
-        public ActionResult SearchRoom()
+        public ActionResult SearchRooms()
         {
             //// Query rooms based on room type and availability
             //var availableRooms = await _context.Rooms
