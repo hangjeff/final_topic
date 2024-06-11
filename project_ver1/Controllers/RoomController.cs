@@ -87,6 +87,14 @@ namespace project_ver1.Controllers
             return View(RoombookingList);
         }
 
+        public IActionResult BookRoom(int roomId, DateTime checkInDate, DateTime checkOutDate)
+        {
+            var rooms = _context.Rooms.Include(r => r.Category).FirstOrDefault(r => r.ID == roomId);
+            ViewBag.CheckInDate = checkInDate;
+            ViewBag.CheckOutDate = checkOutDate;
+            return View(rooms);
+        }
+
         private void SetUserViewBag()
         {
             if (HttpContext.Session.GetInt32("UserId") != null)
