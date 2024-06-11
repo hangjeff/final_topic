@@ -29,10 +29,8 @@
 @if (Model != null && Model.Count > 0)
 {
     <script>
-        function bookRoom(roomType) {
-            var checkInDate = document.getElementById('checkInDate').innerText;
-            var checkOutDate = document.getElementById('checkOutDate').innerText;
-            var url = 'booking2.html?roomType=' + roomType + '&checkInDate=' + checkInDate + '&checkOutDate=' + checkOutDate;
+        function bookRoom(roomId, checkInDate, checkOutDate) {
+            var url = '@Url.Action("BookRoom", "Room")' + '?roomId=' + roomId + '&checkInDate=' + checkInDate + '&checkOutDate=' + checkOutDate;
             window.location.href = url;
         }
     </script>
