@@ -125,6 +125,12 @@
             white-space: normal;
         }
 
+        .apple {
+            position:sticky;
+            top:-1px;
+            z-index:10;
+        }
+
 </style>
 
 <div class="container-md">
@@ -153,7 +159,7 @@
         <table class="table table-hover order_R" style="background-color:white;">
             @if (Model.Count > 0)
             {
-                <thead class=" table table-dark">
+                <thead class=" table table-dark apple">
                     <tr>
                         <th>顧客姓名</th>
                         <th>顧客性別</th>
@@ -227,6 +233,7 @@
     </form> *@
 
 </div>
+<br />
 <script>
     $(document).ready(function () {
         
