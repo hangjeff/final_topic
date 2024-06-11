@@ -117,13 +117,13 @@
 </style>
 
 <div class="container-md">
-  <div class="sidebar">
+    <div class="sidebar">
         <a href="@Url.Action("Backstage", "Home")">員工主頁</a>
         <a href="@Url.Action("BackstageContact", "Home")">顧客問題</a>
-    <a href="@Url.Action("Index", "Home")">產品訂單</a>
-    <a href="@Url.Action("News", "Home")">訂房訂單</a>
-    <a href="@Url.Action("Index", "Home")">會員資料管理</a>
-    <br />
+        <a href="@Url.Action("Index", "Home")">產品訂單</a>
+        <a href="@Url.Action("News", "Home")">訂房訂單</a>
+        <a href="@Url.Action("BackstageMember", "Home")">會員資料管理</a>
+        <br />
     <br />
         <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
             <button type="submit" class="logout btn  btn-danger">登出</button>

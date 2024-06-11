@@ -260,7 +260,7 @@ namespace project_ver1.Controllers
 
         //員工頁面完成，顧客問題表單
         [HttpPost]
-        public IActionResult ContactEdit(int contactId)
+        public IActionResult ContactEdit(int contactId, int employeeId)
         {
 
             var contactToUpdate = _context.Contact.FirstOrDefault(c => c.ID == contactId);
@@ -269,14 +269,85 @@ namespace project_ver1.Controllers
             {
 
                 contactToUpdate.Finished = true;
-
-
+                contactToUpdate.EmployeeId = employeeId;
                 _context.SaveChanges();
             }
 
 
             return RedirectToAction("BackstageContact");
         }
+
+
+
+        //==============================================================
+        //員工會員資料修改
+        public IActionResult BackstageMember()
+        {
+            SetUserViewBag();
+            if (HttpContext.Session.GetInt32("EmployeeId") != null)
+            {
+                var backmember = _context.Customer.ToList();
+
+
+                return View(backmember);
+            }
+            else
+            {
+                return RedirectToAction("member", "Home");
+            }
+        }
+
+        public IActionResult MemberEdit(int id)
+        {
+            SetUserViewBag();
+            var customer = _context.Customer.FirstOrDefault(c => c.ID == id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return View("MemberEdit", customer);
+        }
+
+        [HttpPost]
+        public IActionResult MemberEditPost(Customer customer)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = _context.Customer.FirstOrDefault(u => u.ID == customer.ID);
+                if (user != null)
+                {
+                    user.Name = customer.Name;
+                    user.Email = customer.Email;
+                    user.Phone = customer.Phone;
+                    user.Address = customer.Address;
+                    user.Pwd = customer.Pwd;
+
+                    _context.SaveChanges();
+                    HttpContext.Session.SetString("UserName", user.Name);
+
+                    return RedirectToAction("BackstageMember");
+                }
+            }
+            return View("MemberEdit", customer);
+        }
+
+        [HttpPost]
+        public IActionResult DeleteMember(int id)
+        {
+            var customer = _context.Customer.FirstOrDefault(c => c.ID == id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+
+            _context.Customer.Remove(customer);
+            _context.SaveChanges();
+
+            return RedirectToAction("BackstageMember");
+        }
+
+
+        //==============================================================
         public IActionResult Members_join()
         {
             return View();
@@ -455,7 +526,7 @@ namespace project_ver1.Controllers
 
                     var message = $"請點擊以下連結來重設您的密碼: <a href='{resetLink}'>重設密碼</a>";
                     await _emailService.SendEmailAsync(user.Email, "重設密碼", message);
-                  
+
 
                     return View("ForgotPasswordConfirmation");
                 }
@@ -486,7 +557,7 @@ namespace project_ver1.Controllers
                     //  token 無效
                     return RedirectToAction("Index");
                 }
-                
+
             }
             return View("Index");
         }
@@ -494,7 +565,7 @@ namespace project_ver1.Controllers
         [HttpPost]
         public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
         {
-           
+
             var user = _context.Customer.FirstOrDefault(c => c.Email == model.Email);
             if (user != null)
             {
@@ -511,7 +582,7 @@ namespace project_ver1.Controllers
 
 
 
-      
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
