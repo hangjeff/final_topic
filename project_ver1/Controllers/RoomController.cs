@@ -66,11 +66,11 @@ namespace project_ver1.Controllers
                      join order in _context.RoomOrder on orderDetails.OrderID equals order.ID
                      where order.CheckIn > DateTime.Parse("2024-03-01 ")
                         && order.CheckOut < DateTime.Parse("2024-05-11 ")
-                        //&& rs.CategoryID == 1
-                        //&& !_context.RoomOrderDetails.Any(rod => rod.RoomID == rs.ID)
-                        //&& !_context.RoomOrder.Any(ro =>
-                        //     ro.CheckIn <= DateTime.Parse("2024-04-11 ") &&
-                        //     ro.CheckOut >= DateTime.Parse("2024-04-01 "))
+                     //&& rs.CategoryID == 1
+                     //&& !_context.RoomOrderDetails.Any(rod => rod.RoomID == rs.ID)
+                     //&& !_context.RoomOrder.Any(ro =>
+                     //     ro.CheckIn <= DateTime.Parse("2024-04-11 ") &&
+                     //     ro.CheckOut >= DateTime.Parse("2024-04-01 "))
 
                      select new
                      {
