@@ -68,13 +68,14 @@
     }
 
     .mt-3 {
-        margin-top: 3rem; 
+        margin-top: 3rem;} 
 
     .forgot-password-link {
         color: #1B813E; 
         font-weight: bold; 
         text-decoration: none; 
         font-size: 1.5em;
+        
     }
 
         .forgot-password-link:hover {
@@ -103,7 +104,7 @@
                     <label for="Password" class="input-group-text">密碼</label>
                     <input asp-for="Password" type="password" class="form-control" placeholder="輸入8-20個字元內的密碼" aria-label="Password" aria-describedby="basic-addon2" />
                 </div>
-                <div class="text-center mt-3">
+                <div class=" mt-3">
                     <a href="@Url.Action("ForgotPassword", "Home")" class="forgot-password-link">忘記密碼</a>
                 </div>
                 <div class="d-grid col-10 mx-auto">
