@@ -203,6 +203,7 @@
                                 {
                                     <form asp-action="ContactEdit" asp-controller="Home" method="post">
                                         <input type="hidden" name="contactId" value="@contact.ID" />
+                                        <input type="hidden" name="employeeId" value="@ViewBag.UserId" />
                                         <button type="submit" class="btn btn-primary btn-custom">完成</button>
                                     </form>
                                 }

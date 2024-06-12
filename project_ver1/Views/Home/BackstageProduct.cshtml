@@ -173,43 +173,56 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var contact in Model)
+                    @foreach (var order in Model)
                     {
                         <tr>
-                            <td>@contact.Name</td>
+                            <td>@order.ID</td>
+                            <td>@order.Customer.Name</td>
+                            <td>@order.OderTime</td>
                             <td>
-                                @{
-                                    if (contact.Sex)
-                                    {
-                                        @:男
-                                    }
-                                    else
-                                    {
-                                        @:女
-                                    }
+                                @foreach (var detail in order.Agricultural_Order_Details)
+                                {
+                                   
+                                    <p>@detail.Product.Name</p>
+                                    <br />
                                 }
                             </td>
-                            <td>@contact.Phone</td>
-                            <td>@contact.QuestionCategory</td>
-                            <td>@contact.QuestionContent</td>
-                            <td>@contact.SetTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
                             <td>
-
-                                <p class="@(contact.Finished ? "text-success" : "text-danger")">
-                                    @(contact.Finished ? "已回覆" : "尚未回覆")
+                                @foreach (var detail in order.Agricultural_Order_Details)
+                                {
+                                   
+                                    <p>@detail.Count</p>
+                                    <br />
+                                    <br />
+                                }
+                            </td>
+                            <td>
+                                @foreach (var detail in order.Agricultural_Order_Details)
+                                {
+                                    
+                                    <p>@detail.Price</p>
+                                    <br />
+                                    <br />
+                                }
+                            </td>
+                            <td>@order.SumPrice</td>
+                            <td>
+                                <p class="@(order.OrderFinished ? "text-success" : "text-danger")">
+                                    @(order.OrderFinished ? "已完成" : "尚未完成")
                                 </p>
                             </td>
                             <td>
-                                @if (!contact.Finished)
+                                @if (!order.OrderFinished)
                                 {
-                                    <form asp-action="ContactEdit" asp-controller="Home" method="post">
-                                        <input type="hidden" name="contactId" value="@contact.ID" />
+                                    <form asp-action="BackstageProductEdit" asp-controller="Home" method="post">
+                                        <input type="hidden" name="orderId" value="@order.ID" />
+                                        <input type="hidden" name="employeeId" value="@ViewBag.UserId" />
                                         <button type="submit" class="btn btn-primary btn-custom">完成</button>
                                     </form>
                                 }
                                 else
                                 {
-                                    <p>已聯繫</p>
+                                    <p>已完成</p>
                                 }
                             </td>
                         </tr>
@@ -220,14 +233,15 @@
             {
                 <tbody>
                     <tr>
-                        <td colspan="8">
-                            <h1 style="text-align:center; color:darkolivegreen">所有問題皆已回覆</h1>
+                        <td colspan="9">
+                            <h1 style="text-align:center; color:darkolivegreen">目前沒有訂單</h1>
                         </td>
                     </tr>
                 </tbody>
             }
         </table>
     </div>
+
 
     @*  <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
     <button type="submit" class="logout btn  btn-danger">登出</button>
@@ -236,63 +250,29 @@
 </div>
 <br />
 <script>
-    $(document).ready(function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterSelect = document.getElementById('filterSelect');
+        filterSelect.addEventListener('change', function () {
+            const filterValue = filterSelect.value;
+            const rows = document.querySelectorAll('.order_R tbody tr');
 
-        $('#filterSelect').change(function () {
-            var selectedValue = $(this).val();
+            rows.forEach(row => {
+                const statusCell = row.querySelector('td:nth-child(8) p');
+                const status = statusCell.textContent.trim();
 
-            if (selectedValue === "unanswered") {
-                $('.table-container table tbody tr').each(function () {
-                    if ($(this).find('td:nth-child(7)').text().trim() === "尚未回覆") {
-                        $(this).show();
-                    } else {
-                        $(this).hide();
-                    }
-                });
-            } else if (selectedValue === "answered") {
-                $('.table-container table tbody tr').each(function () {
-                    if ($(this).find('td:nth-child(7)').text().trim() === "已回覆") {
-                        $(this).show();
-                    } else {
-                        $(this).hide();
-                    }
-                });
-            } else {
-                $('.table-container table tbody tr').show();
-            }
+                if (filterValue === 'all') {
+                    row.style.display = '';
+                } else if (filterValue === 'unanswered' && status === '尚未完成') {
+                    row.style.display = '';
+                } else if (filterValue === 'answered' && status === '已完成') {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
         });
     });
 </script>
 
 
 
-@* ===============================
-
-撈好的資料 *@
-@* 
-@model List<Agricultural_Order>
-
-<h1>訂單資料</h1>
-@foreach (var order in Model)
-{
-    <div>
-        <h2>訂單編號: @order.ID</h2>
-        <p>訂單時間: @order.OderTime</p>
-        <p>客戶姓名: @order.Customer.Name</p>
-        <h3>訂單明細:</h3>
-        <table>
-            <tr>
-                <th>產品名稱</th>
-                <th>數量</th>
-            </tr>
-            @foreach (var detail in order.Agricultural_Order_Details)
-            {
-                <tr>
-                    <td>@detail.Product.Name</td>
-                    <td>@detail.Count</td>
-                </tr>
-            }
-        </table>
-    </div>
-}
- *@

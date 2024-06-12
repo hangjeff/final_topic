@@ -230,16 +230,15 @@ namespace project_ver1.Controllers
             SetUserViewBag();
             if (HttpContext.Session.GetInt32("EmployeeId") != null)
             {
-                var backcontact = _context.Contact
-                                     .Where(item => !item.Finished)
-                                     .ToList();
-
-                return View(backcontact);
+                var EmployeeId = HttpContext.Session.GetInt32("EmployeeId");
+                var Employee = _context.Employee.FirstOrDefault(u => u.ID == EmployeeId);
+                return View(Employee);
             }
             else
             {
                 return RedirectToAction("member", "Home");
             }
+
         }
 
         public IActionResult BackstageContact()
@@ -298,24 +297,22 @@ namespace project_ver1.Controllers
             }
         }
 
-       
+
         [HttpPost]
-        public IActionResult BackstageProductEdit(int contactId, int employeeId)
+        public IActionResult BackstageProductEdit(int orderId, int employeeId)
         {
+            var orderUpdate = _context.AgriculturalOrder.FirstOrDefault(c => c.ID == orderId);
 
-            var contactToUpdate = _context.Contact.FirstOrDefault(c => c.ID == contactId);
-
-            if (contactToUpdate != null)
+            if (orderUpdate != null)
             {
-
-                contactToUpdate.Finished = true;
-                contactToUpdate.EmployeeId = employeeId;
+                orderUpdate.OrderFinished = true;
+                orderUpdate.EmployeeID = employeeId;
                 _context.SaveChanges();
             }
 
-
-            return RedirectToAction("BackstageContact");
+            return RedirectToAction("BackstageProduct");
         }
+
         //==============================================================
 
 
