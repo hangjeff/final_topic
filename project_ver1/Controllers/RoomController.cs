@@ -20,6 +20,7 @@ namespace project_ver1.Controllers
 
         public async Task<IActionResult> Index()
         {
+            SetUserViewBag();
             // Retrieve room data from the database
             var rooms = await _context.Rooms
                 .Include(r => r.Category) // Include related category data if needed
@@ -32,6 +33,7 @@ namespace project_ver1.Controllers
         [HttpPost]
         public ActionResult SearchRooms(DateTime checkInDate, DateTime checkOutDate, int roomType)
         {
+            SetUserViewBag();
             // 獲取所有房間
             var allRooms = _context.Rooms
                                    .Where(r => r.CategoryID == roomType)
@@ -61,6 +63,7 @@ namespace project_ver1.Controllers
 
         public IActionResult BookRoom(int roomId, DateTime checkInDate, DateTime checkOutDate)
         {
+            SetUserViewBag();
             ViewBag.CheckInDate = checkInDate;
             ViewBag.CheckOutDate = checkOutDate;
             var rooms = _context.Rooms.Include(r => r.Category).FirstOrDefault(r => r.ID == roomId);

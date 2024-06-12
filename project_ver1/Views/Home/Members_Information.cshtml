@@ -14,7 +14,7 @@
     
    
     .mb-box {
-        width: 55%;
+        width: 65%;
         padding: 120px;
         border-radius: 15px;
         border: 2px solid hsla(0, 0%, 85%, 1);
@@ -27,7 +27,7 @@
     .logout {
         text-decoration: none;
         border: none;
-        background-color: rgba(255, 0, 0, 0.87);
+      
         padding: 5px;
         width: 35%;
         border-radius: 20px;
@@ -55,6 +55,13 @@
         .order:hover {
             background-color: gray;
         }
+        dt  dd{
+            font-size:23px;
+        
+        }
+        h3{
+            font-size:35px;
+        }
 
 
 </style>
@@ -67,47 +74,46 @@
         </h3>
     <br>
     <dl class="row ">
-        <dt  class=" col-md-2  fs-4">
+            <dt class=" col-md-2  fs-4" style="font-size:23px;">
             姓名
         </dt>
-        <dd id="" class=" col-md-10 fs-5">
+            <dd id="" class=" col-md-10 fs-5" style="font-size:23px;">
                 @Model.Name
         </dd>
-        <dt class="col-md-2 fs-4">
+            <dt class="col-md-2 fs-4 " style="font-size:23px;">
             信箱
         </dt>
-        <dd id="" class="col-md-10 fs-5">
+            <dd id="" class="col-md-10 fs-5" style="font-size:23px;">
                 @Model.Email
         </dd>
-        <dt id="" class="col-md-2 fs-4">
+            <dt id="" class="col-md-2 fs-4" style="font-size:23px;">
             電話
         </dt>
-        <dd class="col-md-10 fs-5">
+            <dd class="col-md-10 fs-5" style="font-size:23px;">
                 @Model.Phone
         </dd>
-        <dt class="col-md-2 fs-4">
+            <dt class="col-md-2 fs-4" style="font-size:23px;">
             地址
         </dt>
-        <dd class="col-md-10 fs-5">
+            <dd class="col-md-10 fs-5" style="font-size:23px;">
                 @Model.Address
         </dd>
             
         </dl>
         <br>
-        
-        <a class=" btn btn-dark btn btn-secondary btn-lg" asp-action="Order">查看訂單</a>
+        <a class="  btn btn-dark btn-lg " asp-action="Order">查看訂單</a>
 
-        <br>
-        <br>
-        <a class=" btn btn-success btn  btn-lg" asp-action="CustomerEdit">修改會員資料</a>
+         
+        
+        <a  class=" btn-primary btn  btn-lg"  asp-action="CustomerEdit" style="margin-left:20px;">修改會員資料</a>
 
        
-        <br>
-        <br>
-        <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
-            <button type="submit" class="logout btn  btn-danger">登出</button>
+         
+        <br> 
+        <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post" style="margin-top:20px;">
+            <button type="submit" class=" btn btn-lg  btn-secondary logout " >登出</button>
         </form>
-  
+        
     </div>
 
   
