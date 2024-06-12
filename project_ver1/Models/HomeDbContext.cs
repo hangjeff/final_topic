@@ -45,8 +45,9 @@ namespace project_ver1.Models
         public virtual DbSet<Room_Order> RoomOrder { get; set; }
 
         public virtual DbSet<Room_Order_Details> RoomOrderDetails { get; set; }
+        
 
-       
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Agricultural_Order>(entity =>

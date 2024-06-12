@@ -262,7 +262,49 @@ namespace project_ver1.Controllers
                 return Redirect("/Home/member");
             }
         }
+        //========================================================
+        //訂單客戶資料
+        //訂單客戶資料修改頁面
+        public IActionResult CustomerInformation()
+        {
+            SetUserViewBag();
+            if (HttpContext.Session.GetInt32("UserId") != null)
+            {
+                var userId = HttpContext.Session.GetInt32("UserId");
+                var user = _context.Customer.FirstOrDefault(u => u.ID == userId);
+                return View(user);
+            }
+            else
+            {
+                return RedirectToAction("member", "Home");
+            }
+        }
+        //會員資料修改
+        [HttpPost]
+        public IActionResult CustomerInformation(Customer customer)
+        {
+            SetUserViewBag();
+            if (ModelState.IsValid)
+            {
+                var user = _context.Customer.FirstOrDefault(u => u.ID == customer.ID);
+                if (user != null)
+                {
+                    user.Name = customer.Name;
+                    user.Email = customer.Email;
+                    user.Phone = customer.Phone;
+                    user.Address = customer.Address;
+                   
 
+                    _context.SaveChanges();
+                    HttpContext.Session.SetString("UserName", user.Name);
+                }
+                return RedirectToAction("CustomerInformation");
+            }
+            return View(customer);
+        }
+
+
+        //============================================================
 
         //        Agricultural_Order ao = new Agricultural_Order();
         //                if (HttpContext.Session.GetInt32("OrderID") == null)

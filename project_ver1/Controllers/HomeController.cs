@@ -277,6 +277,50 @@ namespace project_ver1.Controllers
             return RedirectToAction("BackstageContact");
         }
 
+        //==============================================================
+        //員工產品訂單
+        public IActionResult BackstageProduct()
+        {
+            SetUserViewBag();
+            if (HttpContext.Session.GetInt32("EmployeeId") != null)
+            {
+                var orders = _context.AgriculturalOrder
+            .Include(order => order.Agricultural_Order_Details)
+                .ThenInclude(detail => detail.Product)
+            .Include(order => order.Customer)
+            .ToList();
+                return View(orders);
+
+            }
+            else
+            {
+                return RedirectToAction("member", "Home");
+            }
+        }
+
+       
+        [HttpPost]
+        public IActionResult BackstageProductEdit(int contactId, int employeeId)
+        {
+
+            var contactToUpdate = _context.Contact.FirstOrDefault(c => c.ID == contactId);
+
+            if (contactToUpdate != null)
+            {
+
+                contactToUpdate.Finished = true;
+                contactToUpdate.EmployeeId = employeeId;
+                _context.SaveChanges();
+            }
+
+
+            return RedirectToAction("BackstageContact");
+        }
+        //==============================================================
+
+
+
+
 
 
         //==============================================================
@@ -437,7 +481,7 @@ namespace project_ver1.Controllers
             return View(customer);
         }
 
-
+       
         [HttpPost]
         public IActionResult member(LoginViewModel model)
         {
