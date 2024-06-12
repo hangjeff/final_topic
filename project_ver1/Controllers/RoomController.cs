@@ -30,61 +30,32 @@ namespace project_ver1.Controllers
         }
 
         [HttpPost]
-        public ActionResult SearchRooms()
+        public ActionResult SearchRooms(DateTime checkInDate, DateTime checkOutDate, int roomType)
         {
-            //// Query rooms based on room type and availability
-            //var availableRooms = await _context.Rooms
-            //    .Where(r => r.Category.Name == roomType &&
-            //                r.HasReserved == false &&
-            //                r.CanReserve == true)
-            //    .ToListAsync();
+            // 獲取所有房間
+            var allRooms = _context.Rooms
+                                   .Where(r => r.CategoryID == roomType)
+                                   .ToList();
 
-            //// Filter available rooms based on check-in and check-out dates
-            //foreach (var room in availableRooms.ToList())
-            //{
-            //    var reservationsForRoom = await _context.RoomOrder
-            //        .Where(ro => ro.ID == room.ID &&
-            //                      ro.CheckIn <= checkOutDate &&
-            //                      ro.CheckOut >= checkInDate)
-            //        .ToListAsync();
+            // 獲取已預訂的房間ID
+            var bookedRoomIds = (from rs in _context.Rooms
+                                 join orderDetails in _context.RoomOrderDetails on rs.ID equals orderDetails.RoomID
+                                 join order in _context.RoomOrder on orderDetails.OrderID equals order.ID
+                                 where order.CheckIn < checkOutDate && order.CheckOut > checkInDate
+                                 select orderDetails.RoomID).ToList();
 
-            //    if (reservationsForRoom.Any())
-            //    {
-            //        availableRooms.Remove(room);
-            //    }
-            //}
+            // 獲取可用房間
+            var availableRooms = allRooms.Where(r => !bookedRoomIds.Contains(r.ID)).ToList();
 
-            //// Count the number of available rooms
-            //int availableRoomCount = availableRooms.Count;
+            // 將可用房間轉換成 RoomViewModel
+            var availableRoomViewModels = availableRooms.Select(r => new Room_Order
+            {
+                ID = r.ID,
+                CheckIn = checkInDate,
+                CheckOut = checkOutDate
+            }).ToList();
 
-            //// Pass the number of available rooms to the view
-            //ViewBag.AvailableRoomCount = availableRoomCount;
-
-
-            var rb = from rs in _context.Rooms
-                     join orderDetails in _context.RoomOrderDetails on rs.ID equals orderDetails.RoomID
-                     join order in _context.RoomOrder on orderDetails.OrderID equals order.ID
-                     where order.CheckIn > DateTime.Parse("2024-03-01 ")
-                        && order.CheckOut < DateTime.Parse("2024-05-11 ")
-                     //&& rs.CategoryID == 1
-                     //&& !_context.RoomOrderDetails.Any(rod => rod.RoomID == rs.ID)
-                     //&& !_context.RoomOrder.Any(ro =>
-                     //     ro.CheckIn <= DateTime.Parse("2024-04-11 ") &&
-                     //     ro.CheckOut >= DateTime.Parse("2024-04-01 "))
-
-                     select new
-                     {
-                         CategoryID = rs.CategoryID,
-                         CheckIn = order.CheckIn,
-                         CheckOut = order.CheckOut,
-                         ID = orderDetails.RoomID
-                     };
-
-            var RoombookingList = rb.ToList();
-
-
-
-            return View(RoombookingList);
+            return View(availableRoomViewModels);
         }
 
         public IActionResult BookRoom(int roomId, DateTime checkInDate, DateTime checkOutDate)
