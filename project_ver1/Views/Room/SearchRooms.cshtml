@@ -1,6 +1,9 @@
 ﻿@{
     ViewData["Title"] = "SearchRooms";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var checkInDate = ViewBag.CheckInDate?.ToString("yyyy-MM-dd"); ;
+    var checkOutDate = ViewBag.CheckOutDate?.ToString("yyyy-MM-dd"); ;
 }
 <style>
     .room-card {
@@ -47,13 +50,13 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">@room.ID</h5>
-                            <p class="card-text" id="checkInDate">@room.CheckIn</p>
-                            <p class="card-text" id="checkOutDate">@room.CheckOut</p>
+                            <h5 class="card-title"> 房號：@room.ID</h5>
+                            <p class="card-text" id="checkInDate">@checkInDate</p>
+                            <p class="card-text" id="checkOutDate">@checkOutDate</p>
                             <span class="badge badge-primary">免費Wi-Fi</span>
                             <span class="badge badge-secondary">早餐</span>
                             <span class="badge badge-success">海景</span>
-                            <button class="btn btn-danger book-now-btn" onclick="bookRoom(@room.ID)">馬上訂房</button>
+                            <button class="btn btn-danger book-now-btn" onclick="bookRoom(@room.ID, '@checkInDate', '@checkOutDate')">馬上訂房</button>
                         </div>
                     </div>
                 </div>
@@ -65,5 +68,3 @@ else
 {
     <p>No available rooms found.</p>
 }
-
-

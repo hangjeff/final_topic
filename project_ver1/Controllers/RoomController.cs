@@ -54,15 +54,17 @@ namespace project_ver1.Controllers
                 CheckIn = checkInDate,
                 CheckOut = checkOutDate
             }).ToList();
-
+            ViewBag.CheckInDate = checkInDate;
+            ViewBag.CheckOutDate = checkOutDate;
             return View(availableRoomViewModels);
         }
 
         public IActionResult BookRoom(int roomId, DateTime checkInDate, DateTime checkOutDate)
         {
-            var rooms = _context.Rooms.Include(r => r.Category).FirstOrDefault(r => r.ID == roomId);
             ViewBag.CheckInDate = checkInDate;
             ViewBag.CheckOutDate = checkOutDate;
+            var rooms = _context.Rooms.Include(r => r.Category).FirstOrDefault(r => r.ID == roomId);
+
             return View(rooms);
         }
 
