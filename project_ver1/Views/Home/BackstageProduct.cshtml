@@ -131,6 +131,12 @@
         z-index: 10;
     }
 
+    table tr td {
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+   
+
 </style>
 
 <div class="container-md">
@@ -156,11 +162,11 @@
     <br />
     <br />
     <div class="table-container">
-        <table class="table table-hover order_R" style="background-color:white;">
+        <table class="table table-bordered table-hover order_R" style="background-color:white;">
             @if (Model.Count > 0)
             {
                 <thead class=" table table-dark apple">
-                    <tr>
+                    <tr style="border-top: none!important; border-bottom: none!important;">
                         <th>訂單編號</th>
                         <th>顧客姓名</th>
                         <th>下單時間</th>
@@ -175,34 +181,40 @@
                 <tbody>
                     @foreach (var order in Model)
                     {
-                        <tr>
+                        <tr style="border-top: none;border-bottom: none;" >
                             <td>@order.ID</td>
                             <td>@order.Customer.Name</td>
                             <td>@order.OderTime</td>
                             <td>
                                 @foreach (var detail in order.Agricultural_Order_Details)
                                 {
+                                    <div style="height:60px;">
+                                        <p>@detail.Product.Name</p>
+                                        <br />
+                                    </div>
                                    
-                                    <p>@detail.Product.Name</p>
-                                    <br />
-                                }
-                            </td>
-                            <td>
-                                @foreach (var detail in order.Agricultural_Order_Details)
-                                {
-                                   
-                                    <p>@detail.Count</p>
-                                    <br />
-                                    <br />
-                                }
-                            </td>
-                            <td>
-                                @foreach (var detail in order.Agricultural_Order_Details)
-                                {
                                     
-                                    <p>@detail.Price</p>
-                                    <br />
-                                    <br />
+                                  
+                                }
+                            </td>
+                            <td>
+                                @foreach (var detail in order.Agricultural_Order_Details)
+                                {
+
+                                    <div style="height:60px;">
+                                        <p>@detail.Count</p>
+                                    </div>
+                                    
+                                }
+                            </td>
+                            <td>
+                                @foreach (var detail in order.Agricultural_Order_Details)
+                                {
+
+                                    <div style="height:60px;">
+                                        <p>@detail.Price</p>
+                                    </div>
+                                  
                                 }
                             </td>
                             <td>@order.SumPrice</td>

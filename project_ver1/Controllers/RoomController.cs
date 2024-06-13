@@ -50,11 +50,12 @@ namespace project_ver1.Controllers
             var availableRooms = allRooms.Where(r => !bookedRoomIds.Contains(r.ID)).ToList();
 
             // 將可用房間轉換成 RoomViewModel
-            var availableRoomViewModels = availableRooms.Select(r => new Room_Order
+            var availableRoomViewModels = availableRooms.Select(r => new Rooms
             {
                 ID = r.ID,
-                CheckIn = checkInDate,
-                CheckOut = checkOutDate
+                Image = r.Image
+                
+               
             }).ToList();
             ViewBag.CheckInDate = checkInDate;
             ViewBag.CheckOutDate = checkOutDate;
