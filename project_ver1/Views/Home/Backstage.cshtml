@@ -76,7 +76,13 @@
         color: white;
         cursor: pointer;
         font-size: 25px;
+       background-color: #6A4028;
     }
+
+    .logout:hover {
+    background-color:#563F2E;
+    color:white;
+}
 
     .order_F {
         border: 2px solid hsla(0, 0%, 85%, 1);
@@ -102,51 +108,60 @@
             border-color: #7BA23F;
         }
 
-    .sidebar {
+       .sidebar {
         width: 250px;
         position: absolute;
-        top: 100px;
+        
         left: 0;
-        height:100%;
-        background-color: #f8f9fa;
+        height: 100%;
+        background-color: #967249;
         border-right: 1px solid #dee2e6;
-        padding-top: 20px;
 
+       
     }
 
         .sidebar a {
-            padding: 10px 15px;
+            padding: 20px 25px;
             text-decoration: none;
             font-size: 18px;
-            color: #333;
+            color: white;
             display: block;
+            font-weight: bold;
+            font-size: 23px;
+            
         }
 
-         .sidebar a:hover {
-                background-color: #ddd;
+            .sidebar a:hover {
+                background-color: #7D532C;
             }
+
+        .viewdes{
+        height: 1000px;
+        margin-left:300px;
+        margin-right: 100px;
+
+    }
 </style>
 
-<header>
-    <br />
-    <br />
-    <br />
-</header>
-<div>
-<div class="sidebar">
+
+<div style="height:1000px;">
+    <div class="sidebar"style="height:1000px;">
     <a href="@Url.Action("Backstage", "Home")">員工主頁</a>
     <a href="@Url.Action("BackstageContact", "Home")">顧客問題</a>
     <a href="@Url.Action("BackstageProduct", "Home")">產品訂單</a>
-    <a href="@Url.Action("News", "Home")">訂房訂單</a>
+    <a href="@Url.Action("BackstageRoom", "Home")">訂房訂單</a>
     <a href="@Url.Action("BackstageMember", "Home")">會員資料管理</a>
     <br />
     <br />
     <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
-        <button type="submit" class="logout btn  btn-secondary">登出</button>
+        <button type="submit" class="logout btn ">登出</button>
     </form>
 
 </div>
-<div class="container-md">
+ <div class="viewdes">
+    <br />
+    <br />
+    <br />
     <div class="mb-box">
         <h3 class="text-center useheader">
             員工資料
@@ -184,7 +199,3 @@
 </div>
 </div
 </div>
-<br>
-<br>
-<br>
-<br>

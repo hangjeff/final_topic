@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstagemember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstagemember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\memberedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\memberedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\product\\customerinformation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\members_information.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\members_information.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstagemember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstagemember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -86,61 +86,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 338,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ForgotPassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\ForgotPassword.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\ForgotPassword.cshtml",
-              "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\ForgotPassword.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Home\\ForgotPassword.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T07:47:41.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BackstageProduct.cshtml",
-              "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageProduct.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageProduct.cshtml",
-              "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageProduct.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageProduct.cshtml",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAiwCAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T08:17:48.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Backstage.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\Backstage.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\Backstage.cshtml",
               "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\Backstage.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Home\\Backstage.cshtml",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAAAJMAAAAGAAAA",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAgwKEAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T08:17:09.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T08:17:09.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BackstageContact.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageContact.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageContact.cshtml",
               "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageContact.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageContact.cshtml",
-              "ViewState": "AQIAALYAAAAAAAAAAAAAAJkAAAABAAAA",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAAAKwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-12T05:28:24.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Members_Information.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\Members_Information.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\Members_Information.cshtml",
@@ -152,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\About.cshtml",
@@ -160,12 +134,48 @@
               "RelativeToolTip": "project_ver1\\Views\\Home\\About.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAD8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T05:28:48.511Z",
+              "WhenOpened": "2024-06-12T05:28:48.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BackstageMember.cshtml",
+              "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAewKcAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T08:17:30.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BackstageProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageProduct.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageProduct.cshtml",
+              "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageProduct.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageProduct.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAewIgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T08:17:48.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\ForgotPassword.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Home\\ForgotPassword.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:47:41.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MemberEdit.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\MemberEdit.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\MemberEdit.cshtml",
@@ -177,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CustomerInformation.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Product\\CustomerInformation.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Product\\CustomerInformation.cshtml",
@@ -189,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Members_join.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\Members_join.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\Members_join.cshtml",
@@ -198,18 +208,6 @@
               "ViewState": "AQIAADwAAAAAAAAAAAAAAEUAAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-12T06:15:02.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BackstageMember.cshtml",
-              "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAAJsAAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-12T08:17:30.918Z"
             },
             {
               "$type": "Document",

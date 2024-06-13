@@ -19,18 +19,7 @@
         box-shadow: 6px 6px 6px 2px gray;
     }
 
-    .logout {
-        text-decoration: none;
-        border: none;
-        background-color: rgba(255, 0, 0, 0.87);
-        padding: 5px;
-        width: 35%;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        color: white;
-        cursor: pointer;
-        font-size: 25px;
-    }
+
 
     .order {
         position: relative;
@@ -54,15 +43,22 @@
     .logout {
         text-decoration: none;
         border: none;
-        background-color: rgba(255, 0, 0, 0.87);
+        margin-left: 15px;
+        margin-right: 15px;
         padding: 5px;
-        width: 35%;
+        width: 70%;
         border-radius: 20px;
         margin-bottom: 20px;
         color: white;
         cursor: pointer;
         font-size: 25px;
+        background-color: #6A4028;
     }
+
+        .logout:hover {
+            background-color: #563F2E;
+            color: white;
+        }
 
     .order_F {
         border: 2px solid hsla(0, 0%, 85%, 1);
@@ -90,31 +86,32 @@
 
     .sidebar {
         width: 250px;
-        position: fixed;
-        top: 100px;
+        position: absolute;
         left: 0;
-        height: 400px;
-        background-color: #f8f9fa;
+        height: 100%;
+        background-color: #967249;
         border-right: 1px solid #dee2e6;
-        padding-top: 20px;
     }
 
         .sidebar a {
-            padding: 10px 15px;
+            padding: 20px 25px;
             text-decoration: none;
             font-size: 18px;
-            color: #333;
+            color: white;
             display: block;
+            font-weight: bold;
+            font-size: 23px;
         }
 
             .sidebar a:hover {
-                background-color: #ddd;
+                background-color: #7D532C;
             }
 
     /* 捲軸 */
     .table-container {
-        max-height: 500px;
+        max-height: 700px;
         overflow-y: auto;
+        font-size: 18px;
     }
 
         .table-container table {
@@ -136,25 +133,39 @@
         font-weight: normal;
     }
 
+    .viewdes {
+        height: 1000px;
+        margin-left: 300px;
+        margin-right: 100px;
+    }
+
+    .filterSelect {
+        width: 130px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+
 </style>
 
-<div class="container-md">
-    <div class="sidebar">
+<div style="height:1000px;">
+    <div class="sidebar" style="height:1000px;">
         <a href="@Url.Action("Backstage", "Home")">員工主頁</a>
         <a href="@Url.Action("BackstageContact", "Home")">顧客問題</a>
         <a href="@Url.Action("BackstageProduct", "Home")">產品訂單</a>
-        <a href="@Url.Action("News", "Home")">訂房訂單</a>
+        <a href="@Url.Action("BackstageRoom", "Home")">訂房訂單</a>
         <a href="@Url.Action("BackstageMember", "Home")">會員資料管理</a>
         <br />
         <br />
         <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
-            <button type="submit" class="logout btn  btn-danger">登出</button>
+            <button type="submit" class="logout btn ">登出</button>
         </form>
 
     </div>
-    <br />
-    <h1 class="text-center " style="font-family: 'Noto Sans TC', sans-serif;">會員資料管理</h1><br />
-    <br />
+    <div class="viewdes">
+
+        <br />
+        <h1 class="text-center " style="font-family: 'Noto Sans TC', sans-serif;font-size:50px;margin-top:40px;">會員資料管理</h1><br /><br />
     <div class="table-container">
         <table class="table table-hover order_R" style="background-color:white;">
             @if (Model.Count > 0)
@@ -211,13 +222,15 @@
             }
         </table>
     </div>
+    </div>
+</div>
 
     @*  <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
     <button type="submit" class="logout btn  btn-danger">登出</button>
     </form> *@
 
 </div>
-<br />
+
 <script>
     function confirmDelete(id) {
         if (confirm('確定要刪除此會員嗎？')) {
