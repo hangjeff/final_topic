@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <style>
-    .form-control{
+    .form-control {
         width: 100%;
         font-size: 20px;
         padding: 10px 8px;
@@ -20,20 +20,23 @@
         background-color: white;
         box-shadow: 6px 6px 6px 2px gray;
     }
-    .form-group{
-       margin-bottom:30px;
+
+    .form-group {
+        margin-bottom: 30px;
     }
 
-    h5{
+    h5 {
         font-weight: bold;
         font-size: 23px;
     }
-    .btnuse{
+
+    .btnuse {
         padding: 10px;
-        font-size:23px;
+        font-size: 23px;
         font-weight: bold;
     }
-    .useheader{
+
+    .useheader {
         font-weight: bold;
         font-size: 35px;
         background-color: #75ac06;
@@ -47,14 +50,14 @@
 <br />
 <div class="container-md">
     <div class="mb-box">
-        <h3 class="text-center useheader" >
+        <h3 class="text-center useheader">
             修改會員資料
         </h3>
 
         <br><br>
         <form asp-action="MemberEditPost" method="post">
-            <div class="form-group" >
-                <h5 >姓名</h5>
+            <div class="form-group">
+                <h5>姓名</h5>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
@@ -65,7 +68,7 @@
             </div>
             <div class="form-group">
                 <h5>電話</h5>
-                <input asp-for="Phone" class="form-control" type="tel"/>
+                <input asp-for="Phone" class="form-control" type="tel" />
                 <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
             <div class="form-group">
