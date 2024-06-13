@@ -7,88 +7,43 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <style>
-    * {
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
 
-
-
-    .section2 {
-        float: left;
+    .form-control {
         width: 100%;
-        background: #fff;
-        position: relative;
-        box-shadow: 0 0 5px 0px #333;
-    }
-
-    .arrow-wrap {
-        position: absolute;
-        z-index: 1;
-        left: 50%;
-        top: -5em;
-        margin-left: -5em;
-        background: #111;
-        width: 10em;
-        height: 10em;
-        padding: 4em 2em;
-        border-radius: 50%;
-        font-size: 0.5em;
-        display: block;
-        box-shadow: 0px 0px 5px 0px #333;
-    }
-
-    .arrow {
-        float: left;
-        position: relative;
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 3em 3em 0 3em;
-        border-color: #ffffff transparent transparent transparent;
-        -webkit-transform: rotate(360deg)
-    }
-
-        .arrow:after {
-            content: '';
-            position: absolute;
-            top: -3.2em;
-            left: -3em;
-            width: 0px;
-            height: 0px;
-            border-style: solid;
-            border-width: 3em 3em 0 3em;
-            border-color: #111 transparent transparent transparent;
-            -webkit-transform: rotate(360deg)
-        }
-
-    .hint {
-        position: absolute;
-        top: 0.6em;
-        width: 100%;
-        left: 0;
-        font-size: 2em;
-        font-style: italic;
-        text-align: center;
-        color: #fff;
-        opacity: 0;
-    }
-
-    .arrow-wrap:hover .hint {
-        opacity: 1;
+        font-size: 20px;
+        padding: 10px 8px;
     }
 
     .mb-box {
-        width: 55%;
-        padding: 120px;
+        width: 65%;
+        padding: 80px;
         border-radius: 15px;
         border: 2px solid hsla(0, 0%, 85%, 1);
         margin: 0 auto;
-        background-color: rgba(222, 237, 240, 0.953);
+        background-color: white;
         box-shadow: 6px 6px 6px 2px gray;
     }
 
+    .form-group {
+        margin-bottom: 30px;
+    }
+
+    h5 {
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    
+
+    .useheader {
+        font-weight: bold;
+        font-size: 35px;
+        background-color: #75ac06;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
    
     .order {
         position: relative;
@@ -188,31 +143,50 @@
     </form>
 
 </div>
-<div>
-    <div>
-        <div class="container-md">
-            <br><br><br>
-            <section class="main section2">
-                <br>
-                <br>
-                <div class="content" id="content" style="text-align: left;  margin: 20px; padding: 20px;">
-                    <h1 style="text-align: center;">
-                        @Model.Name
-                    </h1>
-                    <br />
-                    <br />
-                    <h4>員工ID:@Model.ID</h4>
-                    <h4>電話:@Model.Phone</h4>
-                    <h4>地址:@Model.Address</h4>
-                    <h4>電子信箱:@Model.Email</h4>
-                    <h4>部門:@Model.Department</h4>
-                </div>
-            </section>
-            <br><br><br><br><br>
+<div class="container-md">
+    <div class="mb-box">
+        <h3 class="text-center useheader">
+            員工資料
+        </h3>
+
+        <br><br>
+     
+            <div class="form-group">
+            <h1 style="font-weight: bold; font-size:45px;text-align: center;color:#26453D">
+                @Model.Name
+            </h1>
+            </div>
+             <br />
+            <div class="form-group">
+            <h5>員工ID:@Model.ID</h5>
+            </div>
+            <div class="form-group">
+            <h5>電話:@Model.Phone</h5>
+            </div>
+            <div class="form-group">
+            <h5>地址:@Model.Address</h5>
+            </div>
+            <div class="form-group">
+            <h5>電子信箱:@Model.Email</h5>
+            </div>
+            <div class="form-group">
+            <h5>所屬部門:@Model.Department</h5>
+            </div>
+            
+
+            </div>
+        
+        </<div>
         </div>
-        <br><br><br><br><br>
-    </div>
-    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
 </div>
 <br>
 <br>

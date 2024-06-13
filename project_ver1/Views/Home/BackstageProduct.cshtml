@@ -7,6 +7,7 @@
     ViewBag.Title = "BackstageProduct";
 }
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
     .mb-box {
         width: 55%;
@@ -21,7 +22,7 @@
     .logout {
         text-decoration: none;
         border: none;
-        background-color: rgba(255, 0, 0, 0.87);
+        margin-left: 15px;
         padding: 5px;
         width: 35%;
         border-radius: 20px;
@@ -31,6 +32,30 @@
         font-size: 25px;
     }
 
+    .sidebar {
+        width: 250px;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        height: 400px;
+        background-color: #f8f9fa;
+        border-right: 1px solid #dee2e6;
+        padding-top: 20px;
+    }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+            display: block;
+        }
+
+      .sidebar a:hover {
+          background-color: #ddd;
+            }
+
+   /*  ------------------------------------------- */
     .order {
         position: relative;
         top: -150px;
@@ -50,18 +75,7 @@
             background-color: gray;
         }
 
-    .logout {
-        text-decoration: none;
-        border: none;
-        background-color: rgba(255, 0, 0, 0.87);
-        padding: 5px;
-        width: 35%;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        color: white;
-        cursor: pointer;
-        font-size: 25px;
-    }
+   
 
     .order_F {
         border: 2px solid hsla(0, 0%, 85%, 1);
@@ -87,28 +101,7 @@
             border-color: #7BA23F;
         }
 
-    .sidebar {
-        width: 250px;
-        position: fixed;
-        top: 100px;
-        left: 0;
-        height: 400px;
-        background-color: #f8f9fa;
-        border-right: 1px solid #dee2e6;
-        padding-top: 20px;
-    }
-
-        .sidebar a {
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #333;
-            display: block;
-        }
-
-            .sidebar a:hover {
-                background-color: #ddd;
-            }
+   
 
     /* 捲軸 */
     .table-container {
@@ -131,6 +124,11 @@
         z-index: 10;
     }
 
+    h1 {
+        font-weight: normal;
+    }
+
+
 </style>
 
 <div class="container-md">
@@ -143,11 +141,12 @@
         <br />
         <br />
         <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
-            <button type="submit" class="logout btn  btn-danger">登出</button>
+            <button type="submit" class="logout btn  btn-secondary">登出</button>
         </form>
 
     </div>
-    <h1 class="text-center">產品訂單</h1>
+    <br />
+    <h1 class="text-center " style="font-family: 'Noto Sans TC', sans-serif;">產品訂單</h1><br />
     <select id="filterSelect">
         <option value="all">所有訂單</option>
         <option value="unanswered">尚未完成</option>
@@ -156,7 +155,7 @@
     <br />
     <br />
     <div class="table-container">
-        <table class="table table-hover order_R" style="background-color:white;">
+        <table class="table table-hover order_R" style="background-color:white;" >
             @if (Model.Count > 0)
             {
                 <thead class=" table table-dark apple">
@@ -165,8 +164,8 @@
                         <th>顧客姓名</th>
                         <th>下單時間</th>
                         <th>商品名稱</th>
-                        <th>商品數量</th>
-                        <th>商品單價</th>
+                        <th style="text-align: center;">商品單價</th>
+                        <th style="text-align: center;">購買數量</th>
                         <th>總價</th>
                         <th>訂單狀態</th>
                         <th>完成訂單</th>
@@ -182,27 +181,31 @@
                             <td>
                                 @foreach (var detail in order.Agricultural_Order_Details)
                                 {
-                                   
-                                    <p>@detail.Product.Name</p>
-                                    <br />
-                                }
-                            </td>
-                            <td>
-                                @foreach (var detail in order.Agricultural_Order_Details)
-                                {
-                                   
-                                    <p>@detail.Count</p>
-                                    <br />
-                                    <br />
-                                }
-                            </td>
-                            <td>
-                                @foreach (var detail in order.Agricultural_Order_Details)
-                                {
+                                    <div style="height:65px;">
+                                        <p>@detail.Product.Name</p>
+                                    </div>
                                     
-                                    <p>@detail.Price</p>
-                                    <br />
-                                    <br />
+                                    
+                                }
+                            </td>
+                            <td>
+                                @foreach (var detail in order.Agricultural_Order_Details)
+                                {
+                                    <div style="height:65px;text-align: center;">
+                                        <p>@detail.Price</p>
+                                    </div>
+
+
+                                }
+                            </td>
+                            <td>
+                                @foreach (var detail in order.Agricultural_Order_Details)
+                                {
+                                    <div style="height:65px;text-align: center;">
+                                        <p>@detail.Count</p>
+                                    </div>
+
+
                                 }
                             </td>
                             <td>@order.SumPrice</td>
