@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\views\\room\\bookroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\room\\bookroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\bookroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Room\\SearchRooms.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAcwB8AAAAFAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwB4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-14T03:42:40.795Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "project_ver1\\Views\\Room\\BookRoom.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAcwCcAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T03:41:58.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T03:41:58.615Z"
             }
           ]
         }
