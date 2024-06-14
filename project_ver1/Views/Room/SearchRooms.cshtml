@@ -36,8 +36,8 @@
 @if (Model != null && Model.Count > 0)
 {
     <script>
-        function bookRoom(roomId, checkInDate, checkOutDate) {
-            var url = '@Url.Action("BookRoom", "Room")' + '?roomId=' + roomId + '&checkInDate=' + checkInDate + '&checkOutDate=' + checkOutDate;
+        function bookRoom(roomId, checkInDate, checkOutDate, Price) {
+            var url = '@Url.Action("BookRoom", "Room")' + '?roomId=' + roomId + '&checkInDate=' + checkInDate + '&checkOutDate=' + checkOutDate + '$Price=' + Price;
             window.location.href = url;
         }
     </script>
@@ -61,7 +61,8 @@
                             <span class="badge badge-primary">免費Wi-Fi</span>
                             <span class="badge badge-secondary">早餐</span>
                             <span class="badge badge-success">海景</span>
-                            <button class="btn btn-danger book-now-btn" onclick="bookRoom(@room.ID, '@checkInDate', '@checkOutDate')">馬上訂房</button>
+                            <input id="Price" type="hidden" value="@room.Price" />
+                            <button class="btn btn-danger book-now-btn" onclick="bookRoom(@room.ID, '@checkInDate', '@checkOutDate', '@room.Price')">馬上訂房</button>
                         </div>
                     </div>
                 </div>
