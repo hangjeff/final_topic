@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\views\\room\\confirmbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\confirmbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\views\\product\\shoppingcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\product\\shoppingcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\documents\\github\\final_topic\\project_ver1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\views\\room\\bookroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,8 +33,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 317,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 373,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,28 +58,87 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ConfirmBooking.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAD8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T06:15:37.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SearchRooms.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\SearchRooms.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Room\\SearchRooms.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAcwB4AAAAbAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T03:42:40.795Z",
+              "WhenOpened": "2024-06-14T06:08:36.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "project_ver1\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "project_ver1\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAswJgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:04:31.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "BookRoom.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\BookRoom.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\BookRoom.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Room\\BookRoom.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Room\\BookRoom.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAcwCcAAAAGAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAmwB4AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T03:41:58.615Z"
+              "WhenOpened": "2024-06-14T03:41:58.615Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 261,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "project_ver1\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "project_ver1\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAUwJQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:19:46.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShoppingCart.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Product\\ShoppingCart.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Product\\ShoppingCart.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\Views\\Product\\ShoppingCart.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Product\\ShoppingCart.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T07:30:47.614Z",
+              "EditorCaption": ""
             }
           ]
         }

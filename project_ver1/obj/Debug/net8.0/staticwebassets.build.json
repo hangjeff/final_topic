@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vsC7BFSIInYmc7Lm5mF8ufnVPkIb5SG1FuyS0/6m4JM=",
+  "Hash": "PE9U9GIZgz53kUf5QKo+fvXZzQRObdhZP0jl5wNbRrE=",
   "Source": "project_ver1",
   "BasePath": "_content/project_ver1",
   "Mode": "Default",
@@ -2181,6 +2181,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\wwwroot\\Sql_File\\0614-1.sql",
+      "SourceId": "project_ver1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\wwwroot\\",
+      "BasePath": "_content/project_ver1",
+      "RelativePath": "Sql_File/0614-1.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Sql_File\\0614-1.sql"
     }
   ]
 }
