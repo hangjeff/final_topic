@@ -37,7 +37,8 @@
 {
     <script>
         function bookRoom(roomId, checkInDate, checkOutDate, Price) {
-            var url = '@Url.Action("BookRoom", "Room")' + '?roomId=' + roomId + '&checkInDate=' + checkInDate + '&checkOutDate=' + checkOutDate + '$Price=' + Price;
+            @* var url = '@Url.Action("BookRoom", "Room")' + '?roomId=' + roomId + '&checkInDate=' + checkInDate + '&checkOutDate=' + checkOutDate + '$Price=' + Price; *@
+               var url = '@Url.Action("BookRoom", "Room")' + '?roomId=' + roomId + '&checkInDate=' + checkInDate + '&checkOutDate=' + checkOutDate + '&Price=' + Price;
             window.location.href = url;
         }
     </script>
@@ -62,7 +63,8 @@
                             <span class="badge badge-secondary">早餐</span>
                             <span class="badge badge-success">海景</span>
                             <input id="Price" type="hidden" value="@room.Price" />
-                            <button class="btn btn-danger book-now-btn" onclick="bookRoom(@room.ID, '@checkInDate', '@checkOutDate', '@room.Price')">馬上訂房</button>
+                            @* <button class="btn btn-danger book-now-btn" onclick="bookRoom(@room.ID, '@checkInDate', '@checkOutDate', '@room.Price')">馬上訂房</button> *@
+                               <button class="btn btn-danger book-now-btn" onclick="bookRoom(@room.ID, '@checkInDate', '@checkOutDate', '@room.Price')">馬上訂房</button>
                         </div>
                     </div>
                 </div>
