@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using MyWebsite.Extensions;
+using static project_ver1.Controllers.ProductController;
 
 namespace project_ver1.Controllers
 {
@@ -103,7 +104,8 @@ namespace project_ver1.Controllers
             }
         }
 
-        public IActionResult ConfirmBooking(int roomId, DateTime checkInDate, DateTime checkOutDate)
+        [HttpPost]
+        public IActionResult ConfirmBooking(int roomId, DateTime checkInDate, DateTime checkOutDate, int Price)
         {
             SetUserViewBag();
             if (HttpContext.Session.GetInt32("UserId") != null)
@@ -128,14 +130,30 @@ namespace project_ver1.Controllers
                 DetailData detailData = new DetailData
                 {
                     RoomID = roomId,
-                    Price = 1800
+                    Price = Price
                 };
 
+                orderData.SumPrice += detailData.Price;
+                // add orderData.Details
+                orderData.Details.Add(detailData);
 
-                var roomList = new List<int>();
+                // set value of session storage "value"
+                HttpContext.Session.SetObject("room", orderData);
                 ViewBag.CheckInDate = checkInDate;
                 ViewBag.CheckOutDate = checkOutDate;
-                return View();
+
+                var roomList = new List<object>();
+                var ID_List = new List<int>();
+
+                // get all data from table [Rooms] based on orderData.Details
+                foreach(var item in orderData.Details)
+                {
+                    var query = _context.Rooms.Find(item.RoomID);
+                    roomList.Add(query);
+                    ID_List.Add(query.ID);
+                }
+                ViewBag.Room_List = ID_List;
+                return View(roomList);
             }
             else
             {
@@ -177,17 +195,5 @@ namespace project_ver1.Controllers
         {
 
         }
-
-
     }
-
 }
-
-
-
-
-
-
-
-
-
