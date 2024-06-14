@@ -145,6 +145,46 @@
         font-size: 20px;
     }
 
+    /* ----------------------------------------------- */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+       /*  --------------------------------------------------------- */
+
 
 </style>
 <div style="height:1000px;">
@@ -194,7 +234,7 @@
                     {
                         <tr>
                             <td>@order.ID</td>
-                            <td>@order.Customer.Name</td>
+                                <td onclick="showModal('@order.Customer.Name', '電話:@order.Customer.Phone', '地址:@order.Customer.Address')">@order.Customer.Name</td>
                             <td>@order.OderTime</td>
                             <td>
                                 @foreach (var detail in order.Agricultural_Order_Details)
@@ -270,6 +310,15 @@
 
 </div>
 <br />
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p  id="modalTime"></p>
+            <p id="modalContent"></p>
+        </div>
+    </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const filterSelect = document.getElementById('filterSelect');
@@ -293,6 +342,23 @@
             });
         });
     });
+    // -----------------------------------------------------------
+        function showModal(title, time, content) {
+            document.getElementById("modalTitle").innerText = title;
+            document.getElementById("modalTime").innerText = time;
+            document.getElementById("modalContent").innerText = content;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == document.getElementById("myModal")) {
+                closeModal();
+            }
+        }
 </script>
 
 
