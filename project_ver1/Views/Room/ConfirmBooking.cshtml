@@ -5,6 +5,7 @@
     var checkInDate = ViewBag.CheckInDate?.ToString("yyyy-MM-dd"); ;
     var checkOutDate = ViewBag.CheckOutDate?.ToString("yyyy-MM-dd"); ;
     var ID_List = ViewBag.Room_List as List<int>;
+    var roomCategory = ViewBag.roomCategory;
 }
 <style>
     .order_F {
@@ -54,7 +55,6 @@
                 <th scope="col">房間圖片</th>
                 <th scope="col">房號</th>
                 <th scope="col">價格</th>
-                <th scope="col">修改數量</th>
                 <th scope="col">刪除</th>
             </tr>
         </thead>
@@ -76,12 +76,7 @@
                             i++;
                         }
                         <td>
-                            <a href="@Url.Action("EachProductDetails", "Product", new { id = product.ID })" style=" text-decoration: none; color:#42602D;">
-                                <button class="btn btn-success">修改數量</button>
-                            </a>
-                        </td>
-                        <td>
-                            <form method="post" action="@Url.Action("ShoppingCart")">
+                            <form method="post" action="@Url.Action("Remove")">
                                 <input type="hidden" name="productId" value="@product.ID" />
                                 <input type="hidden" name="action" value="delete" />
                                 <button type="submit" class="btn btn-danger">刪除</button>
@@ -121,16 +116,19 @@
 
 </div>
 <div>
-    <a href="@Url.Action("Index", "Product")" class="btn btn-info btn-lg go-to-product">
-        <span class="glyphicon glyphicon-eye-open"></span>前往選購其他商品
-    </a>
+    <form method="post" action="@Url.Action("SearchRooms")">
+        <input type="hidden" name="checkInDate" value="@checkInDate" />
+        <input type="hidden" name="checkOutDate" value="@checkOutDate" />
+        <input type="hidden" name="roomType" value="@roomCategory" />
+        <button class="glyphicon glyphicon-eye-open" type="submit">前往選購其他商品</button>
+    </form>
 </div>
 
 <script>
     function confirmPurchase() {
         if (confirm('購買成功，訂單已送出')) {
             document.getElementById('purchaseForm').submit();
-            window.location.href = '@Url.Action("Index", "Product")';
+            window.location.href = '@Url.Action("Index", "Room")';
         }
     }
 </script>

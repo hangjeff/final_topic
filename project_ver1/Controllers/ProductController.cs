@@ -70,11 +70,6 @@ namespace project_ver1.Controllers
             return View(product);
         }
 
-        private void Get_AgriculturalOrder()
-        {
-
-
-        }
         [HttpPost]
         public IActionResult ShoppingCart(SetOrder setOrder)
         {

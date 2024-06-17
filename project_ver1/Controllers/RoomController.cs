@@ -53,8 +53,19 @@ namespace project_ver1.Controllers
                                      where order.CheckIn < checkOutDate && order.CheckOut > checkInDate
                                      select orderDetails.RoomID).ToList();
 
+
                 // 獲取可用房間
                 var availableRooms = allRooms.Where(r => !bookedRoomIds.Contains(r.ID)).ToList();
+                //remove rooms from orderData.Details
+                if (HttpContext.Session.GetObject<OrderData>("room") != null)
+                {
+                    var orderData = HttpContext.Session.GetObject<OrderData>("room");
+                    if (orderData.Details != null)
+                    {
+                        var excludeRooms = orderData.Details.Select(d => d.RoomID).ToList();
+                        availableRooms.RemoveAll(r => excludeRooms.Contains(r.ID));
+                    }
+                }
 
                 // 將可用房間轉換成 RoomViewModel
                 var availableRoomViewModels = availableRooms.Select(r => new Rooms
@@ -66,6 +77,7 @@ namespace project_ver1.Controllers
                 }).ToList();
                 ViewBag.CheckInDate = checkInDate;
                 ViewBag.CheckOutDate = checkOutDate;
+                ViewBag.roomCategory = roomType;
                 return View(availableRoomViewModels);
             }
             else
@@ -82,7 +94,7 @@ namespace project_ver1.Controllers
                 ViewBag.CheckInDate = checkInDate;
                 ViewBag.CheckOutDate = checkOutDate;
                 var rooms = _context.Rooms.Include(r => r.Category).FirstOrDefault(r => r.ID == roomId);
-
+                ViewBag.roomCategory = rooms?.Category;
                 return View(rooms);
             }
             else
@@ -146,9 +158,13 @@ namespace project_ver1.Controllers
                 var ID_List = new List<int>();
 
                 // get all data from table [Rooms] based on orderData.Details
-                foreach(var item in orderData.Details)
+                foreach (var item in orderData.Details)
                 {
                     var query = _context.Rooms.Find(item.RoomID);
+                  if(query != null)
+                    {
+                        ViewBag.roomCategory = query.CategoryID;
+                    }
                     roomList.Add(query);
                     ID_List.Add(query.ID);
                 }
@@ -162,6 +178,20 @@ namespace project_ver1.Controllers
             }
         }
 
+        [HttpPost]
+        public IActionResult Remove(int productId)
+        {
+            SetUserViewBag();
+            var orderData = HttpContext.Session.GetObject<OrderData>("room");
+            var removeRoom = orderData.Details.Find(r => r.RoomID == productId);
+            orderData.Details.Remove(removeRoom);
+            orderData.SumPrice -= removeRoom.Price;
+            HttpContext.Session.SetObject("room", orderData);
+            ViewBag.CheckInDate = orderData.CheckIn;
+            ViewBag.CheckInDate = orderData.CheckOut;
+            ViewBag.roomCategory = removeRoom.Room.CategoryID;
+            return RedirectToAction("ConfirmBooking");
+        }
 
         [HttpPost]
         public IActionResult SaveToDatabase()
