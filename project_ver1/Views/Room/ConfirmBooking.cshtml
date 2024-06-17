@@ -46,7 +46,19 @@
 <div class="container-md">
 
     <br />
-    <h1><strong>購買清單</strong></h1>
+    <div class="row">
+        <div class="col">
+            <h1><strong>購買清單</strong></h1>
+        </div>
+        <div class="col-auto">
+            <form method="post" action="/Room/SearchRooms" class="container-fluid">
+                <input type="hidden" name="checkInDate" value="2024-06-21" />
+                <input type="hidden" name="checkOutDate" value="2024-06-28" />
+                <input type="hidden" name="roomType" value="1" />
+                <button class="btn btn-info float-right" type="submit">前往選購其他商品</button>
+            </form>
+        </div>
+    </div>
     <br />
     <table class="table table-hover order_F" style="background-color:white;">
         <thead class="table table-dark T-title">
@@ -114,14 +126,6 @@
 
     }
 
-</div>
-<div>
-    <form method="post" action="@Url.Action("SearchRooms")">
-        <input type="hidden" name="checkInDate" value="@checkInDate" />
-        <input type="hidden" name="checkOutDate" value="@checkOutDate" />
-        <input type="hidden" name="roomType" value="@roomCategory" />
-        <button class="glyphicon glyphicon-eye-open" type="submit">前往選購其他商品</button>
-    </form>
 </div>
 
 <script>
