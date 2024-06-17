@@ -162,6 +162,68 @@ namespace project_ver1.Controllers
             }
         }
 
+
+        [HttpPost]
+        public IActionResult SaveToDatabase()
+        {
+            if (HttpContext.Session.GetInt32("UserId") != null)
+            {
+
+                var orderData = HttpContext.Session.GetObject<OrderData>("room");
+
+                if (orderData != null)
+                {
+
+                    var roomOrder = new Room_Order
+                    {
+                        CustomerID = orderData.CustomerID,
+                        OrderTime = orderData.OrderTime,
+                        CheckIn = orderData.CheckIn,
+                        CheckOut = orderData.CheckOut,
+                        OrderFinished = orderData.OrderFinished,
+                        EmployeeID = orderData.EmployeeID,
+                        SumPrice = orderData.SumPrice
+                    };
+
+
+                    _context.RoomOrder.Add(roomOrder);
+                    _context.SaveChanges();
+
+                    // Insert data in Room_Order_Details
+                    foreach (var detail in orderData.Details)
+                    {
+                        var roomOrderDetail = new Room_Order_Details
+                        {
+                            OrderID = roomOrder.ID,
+                            RoomID = detail.RoomID,
+                            Price = detail.Price
+                        };
+
+                        _context.RoomOrderDetails.Add(roomOrderDetail);
+
+                        //var product = _context.AgriculturalProduct.Find(detail.ProductID);
+                        //if (product != null)
+                        //{
+                        //    product.Stock -= detail.Count;
+                        //}
+                    }
+
+
+                    _context.SaveChanges();
+
+
+                    HttpContext.Session.Remove("cart");
+                }
+
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return Redirect("/Home/member");
+            }
+        }
+
         private void SetUserViewBag()
         {
             if (HttpContext.Session.GetInt32("UserId") != null)
