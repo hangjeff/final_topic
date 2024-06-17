@@ -231,11 +231,6 @@ namespace project_ver1.Controllers
 
                         _context.RoomOrderDetails.Add(roomOrderDetail);
 
-                        //var product = _context.AgriculturalProduct.Find(detail.ProductID);
-                        //if (product != null)
-                        //{
-                        //    product.Stock -= detail.Count;
-                        //}
                     }
 
 
