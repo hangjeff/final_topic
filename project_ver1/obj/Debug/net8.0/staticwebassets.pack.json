@@ -5,8 +5,12 @@
       "PackagePath": "staticwebassets\\project_ver1.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\wwwroot\\Sql_File\\0614-1.sql",
-      "PackagePath": "staticwebassets\\Sql_File\\0614-1.sql"
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\wwwroot\\Sql_File\\Create_Database.sql",
+      "PackagePath": "staticwebassets\\Sql_File\\Create_Database.sql"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\wwwroot\\Sql_File\\Drop_and_Create_Database.sql",
+      "PackagePath": "staticwebassets\\Sql_File\\Drop_and_Create_Database.sql"
     },
     {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\final_topic\\project_ver1\\wwwroot\\css\\site.css",

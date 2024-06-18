@@ -51,7 +51,7 @@
             <h1><strong>購買清單</strong></h1>
         </div>
         <div class="col-auto">
-            <form method="post" action="/Room/SearchRooms" class="container-fluid">
+            <form method="post" action="@Url.Action("Index")" class="container-fluid">
                 <input type="hidden" name="checkInDate" value="2024-06-21" />
                 <input type="hidden" name="checkOutDate" value="2024-06-28" />
                 <input type="hidden" name="roomType" value="1" />
@@ -91,6 +91,7 @@
                             <form method="post" action="@Url.Action("Remove")">
                                 <input type="hidden" name="productId" value="@product.ID" />
                                 <input type="hidden" name="action" value="delete" />
+                                <input type="hidden" name="roomCategory" value="@roomCategory" />
                                 <button type="submit" class="btn btn-danger">刪除</button>
                             </form>
                         </td>

@@ -26,6 +26,13 @@ namespace project_ver1.Controllers
         public async Task<IActionResult> Index()
         {
             SetUserViewBag();
+            if (HttpContext.Session.GetObject<OrderData>("room") != null)
+            {
+                var orderData = HttpContext.Session.GetObject<OrderData>("room");
+                ViewBag.CheckInDate = orderData.CheckIn;
+                ViewBag.CheckOutDate = orderData.CheckOut;
+            }
+            
             // Retrieve room data from the database
             var rooms = await _context.Rooms
                 .Include(r => r.Category) // Include related category data if needed
@@ -179,17 +186,17 @@ namespace project_ver1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Remove(int productId)
+        public IActionResult Remove(int productId, int roomCategory)
         {
             SetUserViewBag();
             var orderData = HttpContext.Session.GetObject<OrderData>("room");
             var removeRoom = orderData.Details.Find(r => r.RoomID == productId);
+            ViewBag.roomCategory = roomCategory;
             orderData.Details.Remove(removeRoom);
             orderData.SumPrice -= removeRoom.Price;
             HttpContext.Session.SetObject("room", orderData);
             ViewBag.CheckInDate = orderData.CheckIn;
             ViewBag.CheckInDate = orderData.CheckOut;
-            ViewBag.roomCategory = removeRoom.Room.CategoryID;
             return RedirectToAction("ConfirmBooking");
         }
 
