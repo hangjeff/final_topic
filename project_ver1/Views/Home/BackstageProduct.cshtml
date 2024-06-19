@@ -246,7 +246,7 @@
                                     @foreach (var detail in order.Agricultural_Order_Details)
                                     {
                                         <div style="height:65px;text-align: center;">
-                                            <p>@detail.Price</p>
+                                            <p>NT$@detail.Price</p>
                                         </div>
 
 
@@ -262,7 +262,10 @@
 
                                     }
                                 </td>
-                                <td>@order.SumPrice</td>
+                                <td>
+                                    <p>NT$@order.SumPrice</p>
+                                    
+                                </td>
                                 <td>
                                     <p class="@(order.OrderFinished ? "text-success" : "text-danger")">
                                         @(order.OrderFinished ? "已完成" : "尚未完成")

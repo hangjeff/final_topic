@@ -341,6 +341,8 @@ namespace project_ver1.Controllers
                     OrderID = ro.ID,
                     CustomerID = ro.CustomerID,
                     CustomerName = ro.Customer.Name,
+                    CustomerPhone = ro.Customer.Phone,
+                    CustomerAddress = ro.Customer.Address,
                     OrderTime = ro.OrderTime,
                     CheckIn = ro.CheckIn,
                     CheckOut = ro.CheckOut,
@@ -366,9 +368,9 @@ namespace project_ver1.Controllers
 
 
         [HttpPost]
-        public IActionResult BackstageRoom(int orderId, int employeeId)
+        public IActionResult BackstageRoomEdit(int orderId, int employeeId)
         {
-            var orderUpdate = _context.AgriculturalOrder.FirstOrDefault(c => c.ID == orderId);
+            var orderUpdate = _context.RoomOrder.FirstOrDefault(c => c.ID == orderId);
 
             if (orderUpdate != null)
             {
@@ -377,9 +379,8 @@ namespace project_ver1.Controllers
                 _context.SaveChanges();
             }
 
-            return RedirectToAction("BackstageProduct");
+            return RedirectToAction("BackstageRoom");
         }
-
         //==============================================================
 
 

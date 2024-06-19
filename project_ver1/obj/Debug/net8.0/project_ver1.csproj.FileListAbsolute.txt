@@ -10836,3 +10836,5 @@ C:\Users\abcde\Desktop\final_topic-main\final_topic\project_ver1\obj\Debug\net8.
 C:\Users\abcde\Desktop\final_topic-main\final_topic\project_ver1\obj\Debug\net8.0\ref\project_ver1.dll
 C:\Users\User\Desktop\final_topic\project_ver1\bin\Debug\net8.0\Microsoft.Practices.ServiceLocation.dll
 C:\Users\User\Desktop\final_topic\project_ver1\bin\Debug\net8.0\XAct.Core.PCL.dll
+C:\Users\abcde\Desktop\final_topic-main\final_topic\project_ver1\bin\Debug\net8.0\Microsoft.Practices.ServiceLocation.dll
+C:\Users\abcde\Desktop\final_topic-main\final_topic\project_ver1\bin\Debug\net8.0\XAct.Core.PCL.dll
