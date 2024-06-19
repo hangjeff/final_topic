@@ -65,6 +65,10 @@ namespace project_ver1.Controllers
             //_context.SaveChanges();
             return View();
         }
+        public IActionResult Ecpay()
+        {
+            return View();
+        }
 
         public ActionResult Order()
         {
