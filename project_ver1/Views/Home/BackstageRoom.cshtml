@@ -1,0 +1,47 @@
+﻿@model IEnumerable<RoomOrderViewModel>
+
+@{
+    ViewData["Title"] = "Backstage Room Orders";
+}
+
+<h1>尚未完成</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>訂單編號</th>
+            <th>顧客姓名</th>
+            <th>下單時間</th>
+            <th>Check In</th>
+            <th>Check Out</th>
+            <th>訂單完成狀態</th>
+            <th>Employee Name</th>
+            <th>總價</th>
+            <th>房間訂單細節</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.CustomerName</td>
+                <td>@order.OrderTime</td>
+                <td>@order.CheckIn</td>
+                <td>@order.CheckOut</td>
+                <td>@order.OrderFinished</td>
+                <td>@order.EmployeeName</td>
+                <td>@order.SumPrice</td>
+                <td>
+                    <ul>
+                        @foreach (var detail in order.RoomOrderDetails)
+                        {
+                            <li>Room ID: @detail.RoomID, Category: @detail.RoomCategory, Price: @detail.Price</li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
