@@ -7,19 +7,19 @@ namespace project_ver1.Controllers
 {
     public class EpayController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int SumPrice,string ProductName)
         {
             var orderId = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 20);
             //需填入你的網址
-            var website = $"https://localhost:5238/";
+            var website = $"https://localhost:5192/";
             var order = new Dictionary<string, string>
        {
         //綠界需要的參數
         { "MerchantTradeNo",  orderId},
         { "MerchantTradeDate",  DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")},
-        { "TotalAmount",  "100"},
+        { "TotalAmount", SumPrice.ToString()},
         { "TradeDesc",  "無"},
-        { "ItemName",  "測試商品"},
+        { "ItemName", "台灣紅寶石芭樂1入"},
         { "ExpireDate",  "3"},
         { "CustomField1",  ""},
         { "CustomField2",  ""},

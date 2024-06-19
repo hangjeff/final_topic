@@ -42,80 +42,91 @@
                 <th>訂單成立時間</th>
                 <th>訂單總金額</th>
                 <th>訂單狀態</th>
+                <th>結帳</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var AgriculturalOrderModels in Model.AgriculturalOrders)
-            {
-                <tr>
-                    <td>@AgriculturalOrderModels.Order.ID</td>
-                  
-                    <td>
-
-                        @foreach (var product in AgriculturalOrderModels.Products)
-                        {
-                            <p>     
-                                 @product.Name
-                            </p>
-                        }
-                    </td>
-                    <td>
-
-                        @foreach (var orderDetail in AgriculturalOrderModels.OrderDetails)
-                        {
-                            <p>
-                                @orderDetail.Count
+                @foreach (var AgriculturalOrderModels in Model.AgriculturalOrders)
+                {
+                    <form action="/Epay/Index" method="post">
+                        <tr>
+                            <td>@AgriculturalOrderModels.Order.ID</td>
                                 
-                            </p>
-                        }
-                    </td>
-                    <td>
-                        @foreach (var product in AgriculturalOrderModels.Products)
-                        {
-                            <p>    
-                                NT$@product.Price
-                            </p>
-                        }
-                    </td>
-                    <td>
-                        @foreach (var product in AgriculturalOrderModels.Products)
-                        {
-                            <p>
-                                @product.Discount
+                        <td>    
+                                
+                                @foreach (var product in AgriculturalOrderModels.Products)
+                                {
+                                <p>
+                                  <input type="hidden" name="ProductName" value="@product.Name" /> @product.Name
+                                </p>
+                                }
+                            </td>
+                            <td>
+                                    
+                                @foreach (var orderDetail in AgriculturalOrderModels.OrderDetails)
+                                {
+                                <p>
+                                        @orderDetail.Count
 
-                            </p>
-                        }
+                                </p>
+                                }
+                            </td>
+                            <td>
+                                @foreach (var product in AgriculturalOrderModels.Products)
+                                {
+                                <p>
+                                    NT$@product.Price
+                                </p>
+                                }
+                            </td>
+                             <td>
+                                @foreach (var product in AgriculturalOrderModels.Products)
+                                {
+                                <p>
+                                        @product.Discount
+    
+                                </p>
+                                }
+    
+                             </td>
+    
+                             <td>
+    
+                               <p>
+                                 @AgriculturalOrderModels.Order.OderTime
+                               </p>
+    
+                             </td>
+                             <td>
+                            
+                                <p>
+                                   <input type="hidden" name="SumPrice" value="@AgriculturalOrderModels.Order.SumPrice" />NT$@AgriculturalOrderModels.Order.SumPrice
+                                </p>
+                            
+                        
 
-                    </td>
+                             </td>
+                             <td>
+    
+                                <p class="@(@AgriculturalOrderModels.Order.OrderFinished ? "text-success" : "text-danger")">
+                                 @(@AgriculturalOrderModels.Order.OrderFinished ? "已完成" : "未完成")
+                                </p>
+    
+                             </td>
+                             <td>
+                                <a href="@Url.Action("Index", "Epay")" style=" text-decoration: none; color:black;">              
+                                  <button type="submit" class="btn btn-info" >結帳</button>
+                                </a>
+                             </td>
+    
 
-                    <td>
-
-                        <p>
-                            @AgriculturalOrderModels.Order.OderTime
-                        </p>
-
-                    </td>
-                    <td>
-
-                        <p>
-                            NT$@AgriculturalOrderModels.Order.SumPrice
-                        </p>
-
-                    </td>
-                    <td>
-
-                        <p class="@(@AgriculturalOrderModels.Order.OrderFinished ? "text-success" : "text-danger")">
-                            @(@AgriculturalOrderModels.Order.OrderFinished ? "已完成" : "未完成")
-                        </p>
-                    
-                    </td>
-
-                    
-                </tr>
-
+                         </tr>
+                </form>
             }
 
         </tbody>
+            
+        
 
      
         
@@ -132,11 +143,13 @@
                 <th>入住時間</th>
                 <th>退房時間</th>
                 <th>訂單狀態</th>
+                <th>結帳</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var RoomOrderModels in Model.RoomOrders)
             {
+             <form action="/RoomEpay/Index" method="post">
                 <tr>
                     <td>
                         <p>@RoomOrderModels.RoomOrder.ID</p>
@@ -169,7 +182,8 @@
                         }
                     </td>
                     <td>
-                        <p>NT$@RoomOrderModels.RoomOrder.SumPrice</p>
+
+                        <p><input type="hidden" name="RoomSumPrice" value="@RoomOrderModels.RoomOrder.SumPrice" />NT$@RoomOrderModels.RoomOrder.SumPrice</p>
                     </td>
                     <td>
                         <p>@RoomOrderModels.RoomOrder.CheckIn</p>
@@ -183,12 +197,19 @@
                             @(@RoomOrderModels.RoomOrder.OrderFinished ? "已完成" : "未完成")
                         </p>
                     </td>
+                    
+                    <td>
+                        <a href="@Url.Action("Index", "RoomEpay")" style=" text-decoration: none; color:black;">
+                            <button class="btn btn-info">結帳</button>
+                        </a>
+                    </td>
+                    
                 </tr>
-
+             </form>
             }
 
         </tbody>
-
+     
     </table>
 
 
