@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\room\\confirmbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\confirmbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\home\\backstageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\models\\homedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,19 +91,11 @@
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\room\\confirmbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\confirmbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\abcde\\desktop\\final_topic-main\\final_topic\\project_ver1\\views\\room\\searchrooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -109,11 +109,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 317,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Agricultural_Order.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Agricultural_Order.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Agricultural_Order.cs",
@@ -121,12 +121,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Agricultural_Order.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAA7wBQAAACNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T03:08:24.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T03:08:24.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Agricultural_Order_Details.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Agricultural_Order_Details.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Agricultural_Order_Details.cs",
@@ -134,12 +133,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Agricultural_Order_Details.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T03:08:15.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T03:08:15.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Room_Category.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Room_Category.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Room_Category.cs",
@@ -147,12 +145,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Room_Category.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA1wBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:38:21.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:38:21.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "BackstageMember.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
@@ -160,12 +157,11 @@
               "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T02:09:09.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T02:09:09.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Contact.cs",
@@ -173,12 +169,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Contact.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T02:07:44.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T02:07:44.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AllOrder.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\AllOrder.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\AllOrder.cs",
@@ -186,12 +181,11 @@
               "RelativeToolTip": "project_ver1\\Models\\AllOrder.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAADwvx8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:47:09.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:47:09.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Customer.cs",
@@ -199,12 +193,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Customer.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:44:41.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:44:41.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Rooms.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Rooms.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Rooms.cs",
@@ -212,12 +205,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Rooms.cs",
               "ViewState": "AQIAABYAAAAAAAAAAADwvxwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:39:07.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:39:07.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Room_Order_DetailsDbContext.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Room_Order_DetailsDbContext.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Room_Order_DetailsDbContext.cs",
@@ -225,12 +217,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Room_Order_DetailsDbContext.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:38:46.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:38:46.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Room_Order_Details.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Room_Order_Details.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Room_Order_Details.cs",
@@ -238,12 +229,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Room_Order_Details.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAxwBEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:38:38.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:38:38.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Room_Order.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\Room_Order.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\Room_Order.cs",
@@ -251,12 +241,11 @@
               "RelativeToolTip": "project_ver1\\Models\\Room_Order.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAA9wB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:38:29.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:38:29.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "HomeDbContext.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Models\\HomeDbContext.cs",
               "RelativeDocumentMoniker": "project_ver1\\Models\\HomeDbContext.cs",
@@ -264,12 +253,11 @@
               "RelativeToolTip": "project_ver1\\Models\\HomeDbContext.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAcwCwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:30:37.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:30:37.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Backstage.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\Backstage.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\Backstage.cshtml",
@@ -277,12 +265,11 @@
               "RelativeToolTip": "project_ver1\\Views\\Home\\Backstage.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T01:27:18.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:27:18.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\About.cshtml",
@@ -290,12 +277,11 @@
               "RelativeToolTip": "project_ver1\\Views\\Home\\About.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T01:27:17.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:27:17.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\ForgotPassword.cshtml",
@@ -303,8 +289,7 @@
               "RelativeToolTip": "project_ver1\\Views\\Home\\ForgotPassword.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T01:26:55.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:26:55.981Z"
             },
             {
               "$type": "Document",
@@ -314,14 +299,14 @@
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "project_ver1\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAGgBAAAAAAAAAAAAwHYBAAAAAAAA",
+              "ViewState": "AQIAAJkCAAAAAAAAAAAQwHYBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T01:26:02.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BackstageRoom.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageRoom.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageRoom.cshtml",
@@ -334,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "BackstageProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Home\\BackstageProduct.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageProduct.cshtml",
@@ -342,12 +327,11 @@
               "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageProduct.cshtml",
               "ViewState": "AQIAAN8AAAAAAAAAAAAAAOkAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T01:24:47.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:24:47.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\appsettings.json",
               "RelativeDocumentMoniker": "project_ver1\\appsettings.json",
@@ -355,8 +339,7 @@
               "RelativeToolTip": "project_ver1\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-19T01:21:26.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:21:26.733Z"
             },
             {
               "$type": "Document",
@@ -372,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -384,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Room\\Index.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\Index.cshtml",
@@ -396,20 +379,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "RoomController.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Controllers\\RoomController.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\RoomController.cs",
               "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Controllers\\RoomController.cs",
               "RelativeToolTip": "project_ver1\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAADwvx8AAAA4AAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwB8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T01:40:29.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\ProductController.cs",
@@ -417,20 +400,20 @@
               "RelativeToolTip": "project_ver1\\Controllers\\ProductController.cs",
               "ViewState": "AQIAAOQAAAAAAAAAAAAqwCoBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T01:37:27.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-17T01:37:27.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 2,
               "Title": "ConfirmBooking.cshtml",
               "DocumentMoniker": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
               "ToolTip": "C:\\Users\\abcde\\Desktop\\final_topic-main\\final_topic\\project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
               "RelativeToolTip": "project_ver1\\Views\\Room\\ConfirmBooking.cshtml",
-              "ViewState": "AQIAACsAAAAAAAAAAAAMwDUAAAA6AAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAADUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-17T01:36:29.6Z"
+              "WhenOpened": "2024-06-17T01:36:29.6Z",
+              "EditorCaption": ""
             }
           ]
         }

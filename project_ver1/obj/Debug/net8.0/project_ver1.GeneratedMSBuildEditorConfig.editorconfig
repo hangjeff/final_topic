@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\abcde\Desktop\final_topic-main\final_topic\project_ver1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/abcde/Desktop/final_topic-main/final_topic/project_ver1/Views/Epay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBheVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/abcde/Desktop/final_topic-main/final_topic/project_ver1/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/abcde/Desktop/final_topic-main/final_topic/project_ver1/Views/Home/CustomerEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abcde/Desktop/final_topic-main/final_topic/project_ver1/Views/Home/Ecpay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFY3BheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/abcde/Desktop/final_topic-main/final_topic/project_ver1/Views/Home/ForgotPassword.cshtml]

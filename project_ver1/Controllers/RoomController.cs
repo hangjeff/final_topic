@@ -190,14 +190,30 @@ namespace project_ver1.Controllers
         {
             SetUserViewBag();
             var orderData = HttpContext.Session.GetObject<OrderData>("room");
-            var removeRoom = orderData.Details.Find(r => r.RoomID == productId);
+            var removeRoom = orderData.Details.FirstOrDefault(r => r.RoomID == productId);
             ViewBag.roomCategory = roomCategory;
             orderData.Details.Remove(removeRoom);
             orderData.SumPrice -= removeRoom.Price;
             HttpContext.Session.SetObject("room", orderData);
             ViewBag.CheckInDate = orderData.CheckIn;
             ViewBag.CheckInDate = orderData.CheckOut;
-            return RedirectToAction("ConfirmBooking");
+
+            var roomList = new List<object>();
+            var ID_List = new List<int>();
+
+            // get all data from table [Rooms] based on orderData.Details
+            foreach (var item in orderData.Details)
+            {
+                var query = _context.Rooms.Find(item.RoomID);
+                if (query != null)
+                {
+                    ViewBag.roomCategory = query.CategoryID;
+                }
+                roomList.Add(query);
+                ID_List.Add(query.ID);
+            }
+            ViewBag.Room_List = ID_List;
+            return View("ConfirmBooking", roomList);
         }
 
         [HttpPost]
