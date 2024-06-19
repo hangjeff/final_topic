@@ -2,9 +2,9 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "BackstageProduct";
+    ViewData["Title"] = "BackstageRoom";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "BackstageProduct";
+    ViewBag.Title = "BackstageRoom";
 }
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -183,6 +183,7 @@
         }
 
 </style>
+
 <div style="height:1000px;">
     <div class="sidebar" style="height:1000px;">
         <a href="@Url.Action("Backstage", "Home")">員工主頁</a>
@@ -200,7 +201,7 @@
     <div class="viewdes">
 
         <br />
-        <h1 class="text-center " style="font-family: 'Noto Sans TC', sans-serif;font-size:50px;margin-top:40px;">產品訂單</h1><br />
+        <h1 class="text-center " style="font-family: 'Noto Sans TC', sans-serif;font-size:50px;margin-top:40px;">訂房訂單</h1><br />
         <select id="filterSelect" class="filterSelect">
             <option value="all">所有訂單</option>
             <option value="unanswered">尚未完成</option>
@@ -217,9 +218,9 @@
                             <th>訂單編號</th>
                             <th>顧客姓名</th>
                             <th>下單時間</th>
-                            <th style="width:200px;">商品名稱</th>
-                            <th style="text-align: center;">商品單價</th>
-                            <th style="text-align: center;">購買數量</th>
+                            <th>入住日期</th>
+                            <th>退房日期</th>
+                            <th style="width:200px; text-align: center;">房間資訊</th>
                             <th>總價</th>
                             <th>訂單狀態</th>
                             <th>完成訂單</th>
@@ -229,43 +230,30 @@
                         @foreach (var order in Model)
                         {
                             <tr>
-                                <td onclick="showModal('姓名:@order.Customer.Name', '電話:@order.Customer.Phone', '地址:@order.Customer.Address')">@order.ID</td>
-                                <td onclick="showModal('姓名:@order.Customer.Name', '電話:@order.Customer.Phone', '地址:@order.Customer.Address')">@order.Customer.Name</td>
-                                <td>@order.OderTime</td>
+                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.OrderID</td>
+                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.CustomerName</td>
+                                <td>@order.OrderTime</td>
+                                <td>@order.CheckIn.ToString("yyyy/MM/dd")</td>
+                                <td>@order.CheckOut.ToString("yyyy/MM/dd")</td>
                                 <td>
-                                    @foreach (var detail in order.Agricultural_Order_Details)
-                                    {
-                                        <div style="height:65px;">
-                                            <p>@detail.Product.Name</p>
-                                        </div>
-
-
-                                    }
+                                    <ul>
+                                        @foreach (var detail in order.RoomOrderDetails)
+                                        {
+                                            <div style="height:120px;text-align:left;">
+                                               <li>
+                                                房號: @detail.RoomID <br />
+                                                房型: @detail.RoomCategory <br />
+                                                單價: NT$@detail.Price
+                                                </li>
+                                          </div>
+                                        }
+                                    </ul>
                                 </td>
+
                                 <td>
-                                    @foreach (var detail in order.Agricultural_Order_Details)
-                                    {
-                                        <div style="height:65px;text-align: center;">
-                                            <p>NT$@detail.Price</p>
-                                        </div>
-
-
-                                    }
-                                </td>
-                                <td>
-                                    @foreach (var detail in order.Agricultural_Order_Details)
-                                    {
-                                        <div style="height:65px;text-align: center;">
-                                            <p>@detail.Count</p>
-                                        </div>
-
-
-                                    }
-                                </td>
-                                <td>
-                                    <p>NT$@order.SumPrice</p>
-                                    
-                                </td>
+                                        <p>NT$@order.SumPrice</p>
+                                        
+                                    </td>
                                 <td>
                                     <p class="@(order.OrderFinished ? "text-success" : "text-danger")">
                                         @(order.OrderFinished ? "已完成" : "尚未完成")
@@ -274,8 +262,8 @@
                                 <td>
                                     @if (!order.OrderFinished)
                                     {
-                                        <form asp-action="BackstageProductEdit" asp-controller="Home" method="post">
-                                            <input type="hidden" name="orderId" value="@order.ID" />
+                                        <form asp-action="BackstageRoomEdit" asp-controller="Home" method="post">
+                                            <input type="hidden" name="orderId" value="@order.OrderID" />
                                             <input type="hidden" name="employeeId" value="@ViewBag.UserId" />
                                             <button type="submit" class="btn btn-primary btn-custom">完成</button>
                                         </form>
@@ -313,7 +301,7 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2 class="text-center" style=" font-family: 'Noto Sans TC', sans-serif;font-size:45px;">寄件資料</h2>
+            <h2 class="text-center" style=" font-family: 'Noto Sans TC', sans-serif;font-size:45px;">顧客聯絡資訊</h2>
             <br />
             <p id="modalTitle" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
             <p id="modalTime" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
@@ -363,3 +351,58 @@
     </script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+@* 
+//==================================================================== *@
+@* <h1>房間訂單</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>訂單編號</th>
+            <th>顧客姓名</th>
+            <th>下單時間</th>
+            <th>Check In</th>
+            <th>Check Out</th>
+            <th>訂單完成狀態</th>
+            <th>Employee Name</th>
+            <th>總價</th>
+            <th>房間訂單細節</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.CustomerName</td>
+                <td>@order.OrderTime</td>
+                <td>@order.CheckIn</td>
+                <td>@order.CheckOut</td>
+                <td>@order.OrderFinished</td>
+                <td>@order.EmployeeName</td>
+                <td>@order.SumPrice</td>
+                <td>
+                    <ul>
+                        @foreach (var detail in order.RoomOrderDetails)
+                        {
+                            <li>Room ID: @detail.RoomID, Category: @detail.RoomCategory, Price: @detail.Price</li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+ *@

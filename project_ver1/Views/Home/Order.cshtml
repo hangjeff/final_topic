@@ -137,11 +137,10 @@
             <tr>
                 <th>訂房編號</th>
                 <th>房型</th>
-                <th>價格</th>
-                <th>折扣</th>
+                <th>單價</th>
                 <th>訂單總金額</th>
-                <th>入住時間</th>
-                <th>退房時間</th>
+                <th>入住日期</th>
+                <th>退房日期</th>
                 <th>訂單狀態</th>
                 <th>結帳</th>
             </tr>
@@ -182,14 +181,13 @@
                         }
                     </td>
                     <td>
-
-                        <p><input type="hidden" name="RoomSumPrice" value="@RoomOrderModels.RoomOrder.SumPrice" />NT$@RoomOrderModels.RoomOrder.SumPrice</p>
+                        <p>NT$@RoomOrderModels.RoomOrder.SumPrice</p>
                     </td>
                     <td>
-                        <p>@RoomOrderModels.RoomOrder.CheckIn</p>
+                        <p>@RoomOrderModels.RoomOrder.CheckIn.ToString("yyyy/MM/dd")</p>
                     </td>
                     <td>
-                        <p>@RoomOrderModels.RoomOrder.CheckOut</p>
+                        <p>@RoomOrderModels.RoomOrder.CheckOut.ToString("yyyy/MM/dd")</p>
 
                     </td>
                     <td>
