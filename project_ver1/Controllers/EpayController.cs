@@ -7,11 +7,16 @@ namespace project_ver1.Controllers
 {
     public class EpayController : Controller
     {
-        public IActionResult Index(int SumPrice,string ProductName)
+        public IActionResult Index(int SumPrice,List<string> ProductName)
         {
             var orderId = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 20);
             //需填入你的網址
             var website = $"https://localhost:5192/";
+            string myStr = string.Empty;
+            foreach (string item in ProductName)
+            {
+                myStr += item + "#";
+            };
             var order = new Dictionary<string, string>
        {
         //綠界需要的參數
@@ -19,7 +24,7 @@ namespace project_ver1.Controllers
         { "MerchantTradeDate",  DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")},
         { "TotalAmount", SumPrice.ToString()},
         { "TradeDesc",  "無"},
-        { "ItemName", ProductName.ToString()},
+        { "ItemName", myStr},
         { "ExpireDate",  "3"},
         { "CustomField1",  ""},
         { "CustomField2",  ""},
