@@ -141,8 +141,15 @@
 
     .filterSelect {
         width: 130px;
-        height: 30px;
+        height: 40px;
         font-size: 20px;
+    }
+
+    .SearchForm {
+        width: 200px;
+        height: 40px;
+        font-size: 25px;
+        margin-left: 10px;
     }
     /* -------------------------- */
     .modal {
@@ -202,11 +209,19 @@
 
         <br />
         <h1 class="text-center " style="font-family: 'Noto Sans TC', sans-serif;font-size:50px;margin-top:40px;">訂房訂單</h1><br />
-        <select id="filterSelect" class="filterSelect">
-            <option value="all">所有訂單</option>
-            <option value="unanswered">尚未完成</option>
-            <option value="answered">已完成</option>
-        </select>
+        <div style="display: flex; align-items: center;">
+            <select id="filterSelect" class="filterSelect" style="margin-right: 10px;width:15%;">
+                <option value="all">所有訂單</option>
+                <option value="unanswered">尚未完成</option>
+                <option value="answered">已完成</option>
+            </select>
+            <form id="searchForm" class="SearchForm" style="width:80%; align-items: center;">
+                <input type="text" id="searchInput" placeholder="請輸入顧客姓名">
+                <button type="button" class="btn btn-info" onclick="handleSearch()" style="width:15%; height:50px; font-size: 25px; margin-left: 10px;padding:2px;">
+                    搜尋
+                </button>
+            </form>
+        </div>
         <br />
         <br />
         <div class="table-container">
@@ -230,8 +245,8 @@
                         @foreach (var order in Model)
                         {
                             <tr>
-                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone','信箱:@order.CustomerEmail', '地址:@order.CustomerAddress')">@order.OrderID</td>
-                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '信箱:@order.CustomerEmail','地址:@order.CustomerAddress')">@order.CustomerName</td>
+                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.OrderID</td>
+                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.CustomerName</td>
                                 <td>@order.OrderTime</td>
                                 <td>@order.CheckIn.ToString("yyyy/MM/dd")</td>
                                 <td>@order.CheckOut.ToString("yyyy/MM/dd")</td>
@@ -240,171 +255,127 @@
                                         @foreach (var detail in order.RoomOrderDetails)
                                         {
                                             <div style="height:120px;text-align:left;">
-                                               <li>
+                                            <li>
                                                 房號: @detail.RoomID <br />
                                                 房型: @detail.RoomCategory <br />
                                                 單價: NT$@detail.Price
-                                                </li>
-                                          </div>
+                                            </li>
+                    </div>
                                         }
-                                    </ul>
-                                </td>
+                </ul>
+                </td>
 
-                                <td>
-                                        <p>NT$@order.SumPrice</p>
-                                        
-                                    </td>
-                                <td>
-                                    <p class="@(order.OrderFinished ? "text-success" : "text-danger")">
+                <td>
+                    <p>NT$@order.SumPrice</p>
+
+                </td>
+                <td>
+                    <p class="@(order.OrderFinished ? "text-success" : "text-danger")">
                                         @(order.OrderFinished ? "已完成" : "尚未完成")
-                                    </p>
-                                </td>
-                                <td>
+                    </p>
+                </td>
+                <td>
                                     @if (!order.OrderFinished)
                                     {
-                                        <form asp-action="BackstageRoomEdit" asp-controller="Home" method="post">
-                                            <input type="hidden" name="orderId" value="@order.OrderID" />
-                                            <input type="hidden" name="employeeId" value="@ViewBag.UserId" />
-                                            <button type="submit" class="btn btn-primary btn-custom">完成</button>
-                                        </form>
+                        <form asp-action="BackstageRoomEdit" asp-controller="Home" method="post">
+                            <input type="hidden" name="orderId" value="@order.OrderID" />
+                            <input type="hidden" name="employeeId" value="@ViewBag.UserId" />
+                            <button type="submit" class="btn btn-primary btn-custom">完成</button>
+                        </form>
                                     }
                                     else
                                     {
-                                        <p>已完成</p>
+                        <p>已完成</p>
                                     }
-                                </td>
-                            </tr>
+                </td>
+                </tr>
                         }
-                    </tbody>
+            </tbody>
                 }
                 else
                 {
-                    <tbody>
-                        <tr>
-                            <td colspan="9">
-                                <h1 style="text-align:center; color:darkolivegreen">目前沒有訂單</h1>
-                            </td>
-                        </tr>
-                    </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="9">
+                        <h1 style="text-align:center; color:darkolivegreen">目前沒有訂單</h1>
+                    </td>
+                </tr>
+            </tbody>
                 }
-            </table>
-        </div>
+        </table>
+    </div>
 
 
         @*  <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
-        <button type="submit" class="logout btn  btn-danger">登出</button>
-        </form> *@
+    <button type="submit" class="logout btn  btn-danger">登出</button>
+    </form> *@
 
+</div>
+<br />
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 class="text-center" style=" font-family: 'Noto Sans TC', sans-serif;font-size:45px;">顧客聯絡資訊</h2>
+        <br />
+        <p id="modalTitle" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
+        <p id="modalTime" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
+        <p id="modalContent" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
     </div>
-    <br />
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterSelect = document.getElementById('filterSelect');
+        filterSelect.addEventListener('change', function () {
+            const filterValue = filterSelect.value;
+            const rows = document.querySelectorAll('.order_R tbody tr');
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 class="text-center" style=" font-family: 'Noto Sans TC', sans-serif;font-size:45px;">顧客聯絡資訊</h2>
-            <br />
-            <p id="modalTitle" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
-            <p id="modalTime" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
-            <p id="modalAddress" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
-            <p id="modalContent" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
-        </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const filterSelect = document.getElementById('filterSelect');
-            filterSelect.addEventListener('change', function () {
-                const filterValue = filterSelect.value;
-                const rows = document.querySelectorAll('.order_R tbody tr');
+            rows.forEach(row => {
+                const statusCell = row.querySelector('td:nth-child(8) p');
+                const status = statusCell.textContent.trim();
 
-                rows.forEach(row => {
-                    const statusCell = row.querySelector('td:nth-child(8) p');
-                    const status = statusCell.textContent.trim();
-
-                    if (filterValue === 'all') {
-                        row.style.display = '';
-                    } else if (filterValue === 'unanswered' && status === '尚未完成') {
-                        row.style.display = '';
-                    } else if (filterValue === 'answered' && status === '已完成') {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
-                    }
-                });
+                if (filterValue === 'all') {
+                    row.style.display = '';
+                } else if (filterValue === 'unanswered' && status === '尚未完成') {
+                    row.style.display = '';
+                } else if (filterValue === 'answered' && status === '已完成') {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
             });
         });
+    });
 
-    function showModal(title, time, address, content) {
-            document.getElementById("modalTitle").innerText = title;
-            document.getElementById("modalTime").innerText = time;
-            document.getElementById("modalContent").innerText = content;
-            document.getElementById("modalAddress").innerText = address;
-            document.getElementById("myModal").style.display = "block";
+    function showModal(title, time, content) {
+        document.getElementById("modalTitle").innerText = title;
+        document.getElementById("modalTime").innerText = time;
+        document.getElementById("modalContent").innerText = content;
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == document.getElementById("myModal")) {
+            closeModal();
         }
+    }
+    function handleSearch() {
+        const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
+        const rows = document.querySelectorAll('.order_R tbody tr');
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
+        rows.forEach(row => {
+            const customerNameCell = row.querySelector('td:nth-child(2)');
+            const customerName = customerNameCell.textContent.trim().toLowerCase();
 
-        window.onclick = function (event) {
-            if (event.target == document.getElementById("myModal")) {
-                closeModal();
+            if (customerName.includes(searchText)) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
             }
-        }
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@* 
-//==================================================================== *@
-@* <h1>房間訂單</h1>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>訂單編號</th>
-            <th>顧客姓名</th>
-            <th>下單時間</th>
-            <th>Check In</th>
-            <th>Check Out</th>
-            <th>訂單完成狀態</th>
-            <th>Employee Name</th>
-            <th>總價</th>
-            <th>房間訂單細節</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var order in Model)
-        {
-            <tr>
-                <td>@order.OrderID</td>
-                <td>@order.CustomerName</td>
-                <td>@order.OrderTime</td>
-                <td>@order.CheckIn</td>
-                <td>@order.CheckOut</td>
-                <td>@order.OrderFinished</td>
-                <td>@order.EmployeeName</td>
-                <td>@order.SumPrice</td>
-                <td>
-                    <ul>
-                        @foreach (var detail in order.RoomOrderDetails)
-                        {
-                            <li>Room ID: @detail.RoomID, Category: @detail.RoomCategory, Price: @detail.Price</li>
-                        }
-                    </ul>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
- *@
+        });
+    }
+</script>

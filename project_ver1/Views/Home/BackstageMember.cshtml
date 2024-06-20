@@ -145,6 +145,12 @@
         font-size: 20px;
     }
 
+    .SearchForm {
+        width: 200px;
+        height: 40px;
+        font-size: 25px;
+        margin-left: 10px;
+    }
 
 </style>
 
@@ -166,75 +172,101 @@
 
         <br />
         <h1 class="text-center " style="font-family: 'Noto Sans TC', sans-serif;font-size:50px;margin-top:40px;">會員資料管理</h1><br /><br />
-    <div class="table-container">
-        <table class="table table-hover order_R" style="background-color:white;">
-            @if (Model.Count > 0)
-            {
-                <thead class=" table table-dark apple">
-                    <tr>
-                        <th>會員ID</th>
-                        <th>會員姓名</th>
-                        <th>會員密碼</th>
-                        <th>會員信箱</th>
-                        <th>會員電話</th>
-                        <th>會員住址</th>
-                        <th>修改會員資料</th>
-                        <th>刪除會員</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var member in Model)
-                    {
+        <div style="display: flex; align-items: center;">
+            <form id="searchForm" class="SearchForm" style="width:80%; align-items: center;">
+                <input type="text" id="searchInput" placeholder="請輸入會員姓名">
+                <button type="submit" class="btn btn-info" style="width:15%; height:50px; font-size: 25px; margin-left: 10px;padding:2px;">
+                    搜尋
+                </button>
+            </form>
+        </div>
+        <br />
+        <div class="table-container">
+            <table class="table table-hover order_R" style="background-color:white;">
+                @if (Model.Count > 0)
+                {
+                    <thead class=" table table-dark apple">
                         <tr>
-                            <td>@member.ID</td>
-                            <td>
-                                @member.Name
-                            </td>
-                            <td>@member.Pwd</td>
-                            <td>@member.Email</td>
-                            <td>@member.Phone</td>
-                            <td>@member.Address</td>
-                            <td>
-                                <form asp-action="MemberEdit" asp-controller="Home" method="get">
-                                    <input type="hidden" name="id" value="@member.ID" />
-                                    <button type="submit" class="btn btn-primary">編輯</button>
-                                </form>
-                            </td>
-                            <td>
-                                <form id="deleteForm_@member.ID" asp-action="DeleteMember" asp-controller="Home" method="post">
-                                    <input type="hidden" name="id" value="@member.ID" />
-                                    <button type="button" class="btn btn-danger" onclick="confirmDelete(@member.ID)">刪除</button>
-                                </form>
+                            <th>會員ID</th>
+                            <th>會員姓名</th>
+                            <th>會員密碼</th>
+                            <th>會員信箱</th>
+                            <th>會員電話</th>
+                            <th>會員住址</th>
+                            <th>修改會員資料</th>
+                            <th>刪除會員</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var member in Model)
+                        {
+                            <tr>
+                                <td>@member.ID</td>
+                                <td>
+                                    @member.Name
+                                </td>
+                                <td>@member.Pwd</td>
+                                <td>@member.Email</td>
+                                <td>@member.Phone</td>
+                                <td>@member.Address</td>
+                                <td>
+                                    <form asp-action="MemberEdit" asp-controller="Home" method="get">
+                                        <input type="hidden" name="id" value="@member.ID" />
+                                        <button type="submit" class="btn btn-primary">編輯</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form id="deleteForm_@member.ID" asp-action="DeleteMember" asp-controller="Home" method="post">
+                                        <input type="hidden" name="id" value="@member.ID" />
+                                        <button type="button" class="btn btn-danger" onclick="confirmDelete(@member.ID)">刪除</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+                else
+                {
+                    <tbody>
+                        <tr>
+                            <td colspan="8">
+                                <h1 style="text-align:center; color:darkolivegreen">暫無會員</h1>
                             </td>
                         </tr>
-                    }
-                </tbody>
-            }
-            else
-            {
-                <tbody>
-                    <tr>
-                        <td colspan="8">
-                            <h1 style="text-align:center; color:darkolivegreen">暫無會員</h1>
-                        </td>
-                    </tr>
-                </tbody>
-            }
-        </table>
-    </div>
+                    </tbody>
+                }
+            </table>
+        </div>
     </div>
 </div>
 
-    @*  <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
+@*  <form id="logoutForm" asp-action="Logout" asp-controller="Home" method="post">
     <button type="submit" class="logout btn  btn-danger">登出</button>
     </form> *@
 
 </div>
 
 <script>
-    function confirmDelete(id) {
-        if (confirm('確定要刪除此會員嗎？')) {
-            $('#deleteForm_' + id).submit();
+
+    $(document).ready(function () {
+        $('#searchForm').submit(function (event) {
+            event.preventDefault();
+            var searchText = $('#searchInput').val().toLowerCase().trim();
+
+            $('.table-container table tbody tr').each(function () {
+                var customerName = $(this).find('td:nth-child(2)').text().toLowerCase();
+                if (customerName.includes(searchText)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        function confirmDelete(id) {
+            if (confirm('確定要刪除此會員嗎？')) {
+                $('#deleteForm_' + id).submit();
+            }
         }
-    }
+    });
 </script>
