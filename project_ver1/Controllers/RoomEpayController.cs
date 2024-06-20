@@ -7,11 +7,16 @@ namespace project_ver1.Controllers
 {
     public class RoomEpayController : Controller
     {
-        public IActionResult Index(int RoomSumPrice,string RoomName)
+        public IActionResult Index(int RoomSumPrice,List<string> RoomName)
         {
             var orderId = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 20);
             //需填入你的網址
-            var website = $"https://localhost:5192/";
+            var website = $"http://localhost:5192";
+            string myStr = string.Empty;
+            foreach (string item in RoomName)
+            {
+                myStr += item + "#";
+            };
             var order = new Dictionary<string, string>
        {
         //綠界需要的參數
@@ -19,16 +24,16 @@ namespace project_ver1.Controllers
         { "MerchantTradeDate",  DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")},
         { "TotalAmount", RoomSumPrice.ToString()},
         { "TradeDesc",  "無"},
-        { "ItemName", RoomName.ToString()},
+        { "ItemName", myStr},
         { "ExpireDate",  "3"},
         { "CustomField1",  ""},
         { "CustomField2",  ""},
         { "CustomField3",  ""},
         { "CustomField4",  ""},
-        { "ReturnURL",  $"{website}/api/Ecpay/AddPayInfo"},
-        { "OrderResultURL", $"{website}/Home/PayInfo/{orderId}"},
-        { "PaymentInfoURL",  $"{website}/api/Ecpay/AddAccountInfo"},
-        { "ClientRedirectURL",  $"{website}/Home/AccountInfo/{orderId}"},
+        { "ReturnURL",  "http://localhost:5192"},
+        //{ "OrderResultURL", $"{website}/Home/Order"},
+        //{ "PaymentInfoURL",  $"{website}/api/Ecpay/AddAccountInfo"},
+        //{ "ClientRedirectURL",  $"{website}/Home/AccountInfo/{orderId}"},
         { "MerchantID",  "2000132"},
         { "IgnorePayment",  "GooglePay#WebATM#CVS#BARCODE"},
         { "PaymentType",  "aio"},

@@ -2,6 +2,7 @@
 using System.Text;
 using System.Web;
 using System.Security.Cryptography;
+using System.Net;
 
 namespace project_ver1.Controllers
 {
@@ -9,9 +10,10 @@ namespace project_ver1.Controllers
     {
         public IActionResult Index(int SumPrice,List<string> ProductName)
         {
+            SetUserViewBag();
             var orderId = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 20);
             //需填入你的網址
-            var website = $"https://localhost:5192/";
+            var website = $"http://localhost:5192";
             string myStr = string.Empty;
             foreach (string item in ProductName)
             {
@@ -30,10 +32,10 @@ namespace project_ver1.Controllers
         { "CustomField2",  ""},
         { "CustomField3",  ""},
         { "CustomField4",  ""},
-        { "ReturnURL",  $"{website}/api/Ecpay/AddPayInfo"},
-        { "OrderResultURL", $"{website}/Home/PayInfo/{orderId}"},
-        { "PaymentInfoURL",  $"{website}/api/Ecpay/AddAccountInfo"},
-        { "ClientRedirectURL",  $"{website}/Home/AccountInfo/{orderId}"},
+        { "ReturnURL",  "http://localhost:5192"},
+        //{ "OrderResultURL", $"{website}/Home/Index"},
+        //{ "PaymentInfoURL",  $"{website}/api/Ecpay/AddAccountInfo"},
+        //{ "ClientRedirectURL",  $"{website}/Home/AccountInfo/{orderId}"},
         { "MerchantID",  "2000132"},
         { "IgnorePayment",  "GooglePay#WebATM#CVS#BARCODE"},
         { "PaymentType",  "aio"},
@@ -46,6 +48,7 @@ namespace project_ver1.Controllers
         }
         private string GetCheckMacValue(Dictionary<string, string> order)
         {
+            SetUserViewBag();
             var param = order.Keys.OrderBy(x => x).Select(key => key + "=" + order[key]).ToList();
             var checkValue = string.Join("&", param);
             //測試用的 HashKey
@@ -69,6 +72,28 @@ namespace project_ver1.Controllers
             }
             return result.ToString();
         }
+
+        private void SetUserViewBag()
+        {
+            if (HttpContext.Session.GetInt32("UserId") != null)
+            {
+                var userName = HttpContext.Session.GetString("UserName");
+                var userId = HttpContext.Session.GetInt32("UserId");
+
+                ViewBag.UserName = userName;
+                ViewBag.UserId = userId;
+            }
+
+            if (HttpContext.Session.GetInt32("EmployeeId") != null)
+            {
+                var EmployeeName = HttpContext.Session.GetString("EmployeeName");
+                var EmployeeId = HttpContext.Session.GetInt32("EmployeeId");
+
+                ViewBag.UserName = EmployeeName;
+                ViewBag.UserId = EmployeeId;
+            }
+        }
+
         /// step5 : 取得付款資訊，更新資料庫
         //[HttpPost]
         //public ActionResult PayInfo(FormCollection id)
