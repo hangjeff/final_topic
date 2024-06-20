@@ -154,9 +154,12 @@
                         <p>@RoomOrderModels.RoomOrder.ID</p>
                     </td>
                     <td>
-
+                       
                         @foreach (var category in RoomOrderModels.RoomCategory)
                         {
+                            <input type="hidden" name="RoomName" value="@category.Name" />
+                          
+                            
                             <p>
                                 @category.Name
                             </p>
@@ -171,17 +174,10 @@
                             </p>
                         }
                     </td>
+                    
                     <td>
-
-                        @foreach (var rooms in RoomOrderModels.Rooms)
-                        {
-                            <p>
-                               @rooms.Discount
-                            </p>
-                        }
-                    </td>
-                    <td>
-                        <p>NT$@RoomOrderModels.RoomOrder.SumPrice</p>
+                        <input type="hidden" name="RoomSumPrice" value="@RoomOrderModels.RoomOrder.SumPrice" /> <p>NT$@RoomOrderModels.RoomOrder.SumPrice</p>
+                       
                     </td>
                     <td>
                         <p>@RoomOrderModels.RoomOrder.CheckIn.ToString("yyyy/MM/dd")</p>

@@ -7,7 +7,7 @@ namespace project_ver1.Controllers
 {
     public class RoomEpayController : Controller
     {
-        public IActionResult Index(int RoomSumPrice)
+        public IActionResult Index(int RoomSumPrice,string RoomName)
         {
             var orderId = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 20);
             //需填入你的網址
@@ -19,7 +19,7 @@ namespace project_ver1.Controllers
         { "MerchantTradeDate",  DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")},
         { "TotalAmount", RoomSumPrice.ToString()},
         { "TradeDesc",  "無"},
-        { "ItemName", "三人房"},
+        { "ItemName", RoomName.ToString()},
         { "ExpireDate",  "3"},
         { "CustomField1",  ""},
         { "CustomField2",  ""},

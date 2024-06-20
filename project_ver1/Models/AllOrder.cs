@@ -30,6 +30,7 @@ public class RoomOrderViewModel
     public string CustomerName { get; set; }
     public string? CustomerPhone { get; set; }
     public string? CustomerAddress { get; set; }
+    public string? CustomerEmail { get; set; }
     public DateTime OrderTime { get; set; }
     public DateTime CheckIn { get; set; }
     public DateTime CheckOut { get; set; }

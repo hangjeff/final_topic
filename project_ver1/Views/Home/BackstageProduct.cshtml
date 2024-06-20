@@ -229,8 +229,8 @@
                         @foreach (var order in Model)
                         {
                             <tr>
-                                <td onclick="showModal('姓名:@order.Customer.Name', '電話:@order.Customer.Phone', '地址:@order.Customer.Address')">@order.ID</td>
-                                <td onclick="showModal('姓名:@order.Customer.Name', '電話:@order.Customer.Phone', '地址:@order.Customer.Address')">@order.Customer.Name</td>
+                                <td onclick="showModal('姓名:@order.Customer.Name', '電話:@order.Customer.Phone','信箱:@order.Customer.Email', '地址:@order.Customer.Address')">@order.ID</td>
+                                <td onclick="showModal('姓名:@order.Customer.Name', '電話:@order.Customer.Phone', '信箱:@order.Customer.Email','地址:@order.Customer.Address')">@order.Customer.Name</td>
                                 <td>@order.OderTime</td>
                                 <td>
                                     @foreach (var detail in order.Agricultural_Order_Details)
@@ -317,6 +317,7 @@
             <br />
             <p id="modalTitle" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
             <p id="modalTime" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
+            <p id="modalAddress" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
             <p id="modalContent" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
         </div>
     </div>
@@ -344,10 +345,11 @@
             });
         });
 
-        function showModal(title, time, content) {
+        function showModal(title, time, address, content) {
             document.getElementById("modalTitle").innerText = title;
             document.getElementById("modalTime").innerText = time;
             document.getElementById("modalContent").innerText = content;
+            document.getElementById("modalAddress").innerText = address;
             document.getElementById("myModal").style.display = "block";
         }
 

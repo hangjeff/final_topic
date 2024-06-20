@@ -343,6 +343,7 @@ namespace project_ver1.Controllers
                     CustomerName = ro.Customer.Name,
                     CustomerPhone = ro.Customer.Phone,
                     CustomerAddress = ro.Customer.Address,
+                    CustomerEmail = ro.Customer.Email,
                     OrderTime = ro.OrderTime,
                     CheckIn = ro.CheckIn,
                     CheckOut = ro.CheckOut,

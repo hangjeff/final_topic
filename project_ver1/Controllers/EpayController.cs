@@ -19,7 +19,7 @@ namespace project_ver1.Controllers
         { "MerchantTradeDate",  DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")},
         { "TotalAmount", SumPrice.ToString()},
         { "TradeDesc",  "無"},
-        { "ItemName", "台灣紅寶石芭樂1入"},
+        { "ItemName", ProductName.ToString()},
         { "ExpireDate",  "3"},
         { "CustomField1",  ""},
         { "CustomField2",  ""},

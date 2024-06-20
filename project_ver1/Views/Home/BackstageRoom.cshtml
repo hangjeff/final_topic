@@ -230,8 +230,8 @@
                         @foreach (var order in Model)
                         {
                             <tr>
-                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.OrderID</td>
-                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.CustomerName</td>
+                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone','信箱:@order.CustomerEmail', '地址:@order.CustomerAddress')">@order.OrderID</td>
+                                <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '信箱:@order.CustomerEmail','地址:@order.CustomerAddress')">@order.CustomerName</td>
                                 <td>@order.OrderTime</td>
                                 <td>@order.CheckIn.ToString("yyyy/MM/dd")</td>
                                 <td>@order.CheckOut.ToString("yyyy/MM/dd")</td>
@@ -305,6 +305,7 @@
             <br />
             <p id="modalTitle" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
             <p id="modalTime" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
+            <p id="modalAddress" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
             <p id="modalContent" style="font-family: 'Noto Sans TC', sans-serif;font-size:20px;"></p>
         </div>
     </div>
@@ -332,10 +333,11 @@
             });
         });
 
-        function showModal(title, time, content) {
+    function showModal(title, time, address, content) {
             document.getElementById("modalTitle").innerText = title;
             document.getElementById("modalTime").innerText = time;
             document.getElementById("modalContent").innerText = content;
+            document.getElementById("modalAddress").innerText = address;
             document.getElementById("myModal").style.display = "block";
         }
 
