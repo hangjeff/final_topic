@@ -260,7 +260,7 @@ namespace project_ver1.Controllers
                     _context.SaveChanges();
 
 
-                    HttpContext.Session.Remove("cart");
+                    HttpContext.Session.Remove("room");
                 }
 
 
