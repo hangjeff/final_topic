@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\final_topic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\controllers\\roomepaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\roomepay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\roomepay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\epay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\epay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\home\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\desktop\\final_topic\\project_ver1\\controllers\\roomepaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\roomepaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,16 +27,20 @@
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\desktop\\final_topic\\project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\controllers\\epaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\epaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\room\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|c:\\users\\user\\desktop\\final_topic\\project_ver1\\views\\home\\backstageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\home\\backstageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\backstagecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\home\\backstagemember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,24 +55,8 @@
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\customeredit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\controllers\\epaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\epaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\controllers\\ecpaycontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\ecpaycontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\roomepay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\roomepay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\epay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\epay\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\controllers\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\home\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\home\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB9397D7-1148-4E16-8066-97055401D84A}|project_ver1\\project_ver1.csproj|solutionrelative:project_ver1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 317,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,57 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Room\\Index.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Room\\Index.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Room\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T04:02:44.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BackstageRoom.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageRoom.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageRoom.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageRoom.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageRoom.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAoAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T17:19:04.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BackstageMember.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
-              "ViewState": "AQIAAN0AAAAAAAAAAAAhwBABAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T17:17:57.93Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "BackstageContact.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageContact.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageContact.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageContact.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageContact.cshtml",
-              "ViewState": "AQIAAEwBAAAAAAAAAAAhwFwBAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T17:17:00.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "RoomEpayController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\RoomEpayController.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\RoomEpayController.cs",
@@ -177,20 +127,134 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "RoomController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\RoomController.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\RoomController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\RoomController.cs",
               "RelativeToolTip": "project_ver1\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAABMBAAAAAAAAAAAowCUBAAAJAAAA",
+              "ViewState": "AQIAALAAAAAAAAAAAAAiwCUBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T06:15:57.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\appsettings.json",
+              "RelativeDocumentMoniker": "project_ver1\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\appsettings.json",
+              "RelativeToolTip": "project_ver1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-20T03:50:10.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "EpayController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\EpayController.cs",
+              "RelativeDocumentMoniker": "project_ver1\\Controllers\\EpayController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\EpayController.cs",
+              "RelativeToolTip": "project_ver1\\Controllers\\EpayController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T03:46:26.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\Order.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\Order.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\Order.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Home\\Order.cshtml",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T03:46:48.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Epay\\Index.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Epay\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Epay\\Index.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Epay\\Index.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwB4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T04:03:42.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\RoomEpay\\Index.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\RoomEpay\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\RoomEpay\\Index.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\RoomEpay\\Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAIwB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T03:24:05.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BackstageContact.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageContact.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageContact.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageContact.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageContact.cshtml",
+              "ViewState": "AQIAAG0AAAAAAAAAAAD4v1wBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T17:17:00.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BackstageMember.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageMember.cshtml",
+              "ViewState": "AQIAAN0AAAAAAAAAAAAhwBABAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T17:17:57.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BackstageRoom.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageRoom.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageRoom.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageRoom.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Home\\BackstageRoom.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T17:19:04.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Room\\Index.cshtml",
+              "RelativeDocumentMoniker": "project_ver1\\Views\\Room\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Room\\Index.cshtml",
+              "RelativeToolTip": "project_ver1\\Views\\Room\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T04:02:44.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "BackstageProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\BackstageProduct.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\BackstageProduct.cshtml",
@@ -202,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "CustomerEdit.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\CustomerEdit.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\CustomerEdit.cshtml",
@@ -214,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\HomeController.cs",
@@ -226,67 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\appsettings.json",
-              "RelativeDocumentMoniker": "project_ver1\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\appsettings.json",
-              "RelativeToolTip": "project_ver1\\appsettings.json",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAkAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-20T03:50:10.809Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Order.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\Order.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\Order.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\Order.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Home\\Order.cshtml",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAwwMsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T03:46:48.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EpayController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\EpayController.cs",
-              "RelativeDocumentMoniker": "project_ver1\\Controllers\\EpayController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\EpayController.cs",
-              "RelativeToolTip": "project_ver1\\Controllers\\EpayController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T03:46:26.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Epay\\Index.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\Epay\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Epay\\Index.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\Epay\\Index.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAwwA0AAAB7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T04:03:42.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\RoomEpay\\Index.cshtml",
-              "RelativeDocumentMoniker": "project_ver1\\Views\\RoomEpay\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\RoomEpay\\Index.cshtml",
-              "RelativeToolTip": "project_ver1\\Views\\RoomEpay\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAB7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-20T03:24:05.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\Session.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\Session.cs",
@@ -298,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ForgotPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Views\\Home\\ForgotPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "project_ver1\\Views\\Home\\ForgotPasswordConfirmation.cshtml",
@@ -310,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\ProductController.cs",
@@ -346,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "EcpayController1.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\final_topic\\project_ver1\\Controllers\\EcpayController1.cs",
               "RelativeDocumentMoniker": "project_ver1\\Controllers\\EcpayController1.cs",
