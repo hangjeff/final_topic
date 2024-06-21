@@ -146,18 +146,23 @@
                     <td>
                             @foreach (var rooms in RoomOrderModels.Rooms)
                             {
+                            
                                 @switch (rooms.CategoryID)
                                 {
                                     case 1:
+                                    <input type="hidden" name="RoomName" value="單人房" />
                                     <p>單人房</p>
                                         break;
                                     case 2:
+                                    <input type="hidden" name="RoomName" value="雙人房" />
                                     <p>雙人房</p>
                                         break;
                                     case 3:
+                                    <input type="hidden" name="RoomName" value="三人房" />
                                     <p>三人房</p>
                                         break;
                                     case 4:
+                                    <input type="hidden" name="RoomName" value="四人房" />
                                     <p>四人房</p>
                                         break;
                                     default:
