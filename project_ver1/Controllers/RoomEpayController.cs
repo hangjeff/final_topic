@@ -7,8 +7,10 @@ namespace project_ver1.Controllers
 {
     public class RoomEpayController : Controller
     {
+        [HttpPost]
         public IActionResult Index(int RoomSumPrice,List<string> RoomName)
         {
+            SetUserViewBag();
             var orderId = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 20);
             //需填入你的網址
             var website = $"http://localhost:5192";
@@ -68,6 +70,26 @@ namespace project_ver1.Controllers
                 result.Append(hash[i].ToString("X2"));
             }
             return result.ToString();
+        }
+        private void SetUserViewBag()
+        {
+            if (HttpContext.Session.GetInt32("UserId") != null)
+            {
+                var userName = HttpContext.Session.GetString("UserName");
+                var userId = HttpContext.Session.GetInt32("UserId");
+
+                ViewBag.UserName = userName;
+                ViewBag.UserId = userId;
+            }
+
+            if (HttpContext.Session.GetInt32("EmployeeId") != null)
+            {
+                var EmployeeName = HttpContext.Session.GetString("EmployeeName");
+                var EmployeeId = HttpContext.Session.GetInt32("EmployeeId");
+
+                ViewBag.UserName = EmployeeName;
+                ViewBag.UserId = EmployeeId;
+            }
         }
     }
 }
