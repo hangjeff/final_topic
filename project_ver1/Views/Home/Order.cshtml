@@ -144,17 +144,29 @@
                         <p>@RoomOrderModels.RoomOrder.ID</p>
                     </td>
                     <td>
-                       
-                        @foreach (var category in RoomOrderModels.RoomCategory)
-                        {
-                            <input type="hidden" name="RoomName" value="@category.Name" />
-                          
-                            
-                            <p>
-                                @category.Name
-                            </p>
-                        }
+                            @foreach (var rooms in RoomOrderModels.Rooms)
+                            {
+                                @switch (rooms.CategoryID)
+                                {
+                                    case 1:
+                                    <p>單人房</p>
+                                        break;
+                                    case 2:
+                                    <p>雙人房</p>
+                                        break;
+                                    case 3:
+                                    <p>三人房</p>
+                                        break;
+                                    case 4:
+                                    <p>四人房</p>
+                                        break;
+                                    default:
+
+                                        break;
+                                }
+                            }
                     </td>
+
                     <td>
 
                         @foreach (var rooms in RoomOrderModels.Rooms)
