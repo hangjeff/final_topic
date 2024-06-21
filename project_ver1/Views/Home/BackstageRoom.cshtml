@@ -384,7 +384,7 @@
             const checkinCell = row.querySelector('td:nth-child(4)').textContent.trim();
             const checkoutCell = row.querySelector('td:nth-child(5)').textContent.trim();
 
-            // Convert checkinCell and checkoutCell to Date objects
+         
             const checkinCellDate = new Date(checkinCell);
             const checkoutCellDate = new Date(checkoutCell);
 
@@ -392,7 +392,7 @@
             const matchesCheckin = (checkinDate === '' || checkinCell === checkinDate);
             const matchesCheckout = (checkoutDate === '' || checkoutCell === checkoutDate);
 
-            // Check if checkinCell and checkoutCell are valid dates
+            
             const isValidCheckin = !isNaN(checkinCellDate.getTime());
             const isValidCheckout = !isNaN(checkoutCellDate.getTime());
 
