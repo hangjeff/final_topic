@@ -215,12 +215,21 @@
                 <option value="unanswered">尚未完成</option>
                 <option value="answered">已完成</option>
             </select>
-            <form id="searchForm" class="SearchForm" style="width:80%; align-items: center;">
-                <input type="text" id="searchInput" placeholder="請輸入顧客姓名">
-                <button type="button" class="btn btn-info" onclick="handleSearch()" style="width:15%; height:50px; font-size: 25px; margin-left: 10px;padding:2px;">
+            <form id="searchForm" class="SearchForm" style="width:100%; align-items: center;">
+                
+                <input type="text" id="searchInput" style="width:25%;" placeholder="請輸入顧客姓名">
+
+                <label for="checkinInput" style="width:10%;">入住日期:</label>
+                <input type="date" id="checkinInput" class="SearchForm" style="height:40px; width:15%;margin-right: 10px;margin-left:0px;">
+
+                <label for="checkoutInput" style="width:10%;">退房日期:</label>
+                <input type="date" id="checkoutInput" class="SearchForm" style="height:40px;width:15%;margin-left:0px; margin-right: 10px;">
+
+                <button type="button" class="btn btn-info" onclick="handleSearch()" style="width:12%; height:50px; font-size: 25px; margin-left: 10px;padding:2px;">
                     搜尋
                 </button>
             </form>
+
         </div>
         <br />
         <br />
@@ -248,8 +257,8 @@
                                 <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.OrderID</td>
                                 <td onclick="showModal('姓名:@order.CustomerName', '電話:@order.CustomerPhone', '地址:@order.CustomerAddress')">@order.CustomerName</td>
                                 <td>@order.OrderTime</td>
-                                <td>@order.CheckIn.ToString("yyyy/MM/dd")</td>
-                                <td>@order.CheckOut.ToString("yyyy/MM/dd")</td>
+                                <td>@order.CheckIn.ToString("yyyy-MM-dd")</td>
+                                <td>@order.CheckOut.ToString("yyyy-MM-dd")</td>
                                 <td>
                                     <ul>
                                         @foreach (var detail in order.RoomOrderDetails)
@@ -365,17 +374,35 @@
     }
     function handleSearch() {
         const searchText = document.getElementById('searchInput').value.trim().toLowerCase();
+        const checkinDate = document.getElementById('checkinInput').value;
+        const checkoutDate = document.getElementById('checkoutInput').value;
         const rows = document.querySelectorAll('.order_R tbody tr');
 
         rows.forEach(row => {
             const customerNameCell = row.querySelector('td:nth-child(2)');
             const customerName = customerNameCell.textContent.trim().toLowerCase();
+            const checkinCell = row.querySelector('td:nth-child(4)').textContent.trim();
+            const checkoutCell = row.querySelector('td:nth-child(5)').textContent.trim();
 
-            if (customerName.includes(searchText)) {
+            // Convert checkinCell and checkoutCell to Date objects
+            const checkinCellDate = new Date(checkinCell);
+            const checkoutCellDate = new Date(checkoutCell);
+
+            const matchesName = customerName.includes(searchText);
+            const matchesCheckin = (checkinDate === '' || checkinCell === checkinDate);
+            const matchesCheckout = (checkoutDate === '' || checkoutCell === checkoutDate);
+
+            // Check if checkinCell and checkoutCell are valid dates
+            const isValidCheckin = !isNaN(checkinCellDate.getTime());
+            const isValidCheckout = !isNaN(checkoutCellDate.getTime());
+
+            if (matchesName && matchesCheckin && matchesCheckout && isValidCheckin && isValidCheckout) {
                 row.style.display = '';
             } else {
                 row.style.display = 'none';
             }
         });
     }
+
+
 </script>
